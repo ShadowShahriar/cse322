@@ -2,7 +2,7 @@
 
 Artificial intelligence **(AI)** is a branch of computer science that enables machines to simulate human intelligence, such as learning, reasoning, problem-solving, perception, and creativity.
 
-- [**📌 Course Outline: Theory**](materials/course-outline-theory.docx)
+- [**📌 Course Outline: Theory (Intake 52)**](materials/course-outline-theory-old.pdf) (Collected by [Meherunnesa Nithi](https://www.facebook.com/meherunnesa.nithi.3))
 - [**📌 Course Outline: Lab**](materials/course-outline-lab.docx)
 
 ## Course Information
