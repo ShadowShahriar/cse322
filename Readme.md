@@ -3,7 +3,7 @@
 Artificial intelligence **(AI)** is a branch of computer science that enables machines to simulate human intelligence, such as learning, reasoning, problem-solving, perception, and creativity.
 
 - [**📌 Course Outline: Theory (Intake 52)**](materials/course-outline-theory-old.pdf) (Collected by [Meherunnesa Nithi](https://www.facebook.com/meherunnesa.nithi.3))
-  <!-- - [**📌 Course Outline: Lab**](materials/course-outline-lab.docx) -->
+      <!-- - [**📌 Course Outline: Lab**](materials/course-outline-lab.docx) -->
 
 ## Course Information
 
@@ -22,9 +22,9 @@ Course offered by,
 
 - [**📘 Artificial Intelligence and Expert System**](https://drive.usercontent.google.com/download?id=1uSgP-NPDUk1cXd-vhNI7cadLamBy9e6m&export=download) -->
 
-<!-- ## Course Materials
+## Course Materials
 
-> All course materials have been moved to this dedicated **Google Drive folder** to avoid GitHub pages size constraints. -->
+> All course materials will be stored in this dedicated [**Google Drive folder**](https://drive.google.com/drive/folders/1jBeUkvQco9jlseqo1Vu6jyprRT6lif3H?usp=drive_link).
 
 <!-- ## Theory Quick Notes
 
