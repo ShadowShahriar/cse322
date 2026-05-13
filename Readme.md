@@ -57,6 +57,7 @@ Course offered by,
 #### Mid Term
 
 - [**Class 01**](https://shadowshahriar.github.io/cse322/notes/class-01.pdf): 11 May 2026
+- [**Class 02-03**](https://shadowshahriar.github.io/cse322/notes/class-02-03.pdf): 13 May 2026
 
 ## Colab Notebooks
 
