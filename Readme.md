@@ -2,8 +2,8 @@
 
 Artificial intelligence **(AI)** is a branch of computer science that enables machines to simulate human intelligence, such as learning, reasoning, problem-solving, perception, and creativity.
 
+- [**📌 Course Outline: Theory (Revised)**](materials/course-outline-theory-revised.pdf)
 - [**📌 Course Outline: Theory (Intake 52)**](materials/course-outline-theory-old.pdf) (Collected by [Meherunnesa Nithi](https://www.facebook.com/meherunnesa.nithi.3))
-      <!-- - [**📌 Course Outline: Lab**](materials/course-outline-lab.docx) -->
 
 ## Course Information
 
@@ -16,7 +16,7 @@ Classroom Code : talwyrxu
 
 Course offered by,
 
-[**Fawzia Fairooz**](https://bubt.edu.bd/department/27/faculty/profile/24709)<br>Lecturer<br>Department of Computer Science and Engineering<br>**fawziafairooz@bubt.edu.bd**<br>B1/602<br>Counseling hours will be provided later
+[**Fawzia Fairooz**](https://bubt.edu.bd/department/27/faculty/profile/24709)<br>Lecturer<br>Department of Computer Science and Engineering<br>**fawziafairooz@bubt.edu.bd**<br>+880 160 0961 809<br>B1/602 ([Counseling hours](materials/counseling-hours.pdf))
 
 <!-- ## Recommended Book
 
