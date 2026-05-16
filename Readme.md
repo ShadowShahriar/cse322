@@ -62,3 +62,7 @@ Course offered by,
 ## Colab Notebooks
 
 - [**Lab 01**](https://colab.research.google.com/drive/1Qj9KUcEoxfbyoZAGKe1dyPWY-CYMtPu1?usp=sharing): 10 May 2026
+
+## Weekly Assessment Notebooks
+
+- [**Week 01**](https://colab.research.google.com/drive/1fZ5toyaYmHx_6VpGGK_in60ju9J55Acw?usp=sharing): 10 May 2026
