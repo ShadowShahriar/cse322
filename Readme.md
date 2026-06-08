@@ -59,11 +59,13 @@ Course offered by,
 - [**Class 01**](https://shadowshahriar.github.io/cse322/notes/class-01.pdf): 11 May 2026
 - [**Class 02-03**](https://shadowshahriar.github.io/cse322/notes/class-02-03.pdf): 13 May 2026
 - [**Class 04**](https://shadowshahriar.github.io/cse322/notes/class-04.pdf): 18 May 2026
+- [**Class 05**](https://shadowshahriar.github.io/cse322/notes/class-05.pdf): 8 June 2026
 
 ## Colab Notebooks
 
 - [**Lab 01**](https://colab.research.google.com/drive/1Qj9KUcEoxfbyoZAGKe1dyPWY-CYMtPu1?usp=sharing): 10 May 2026
 - [**Lab 02**](https://colab.research.google.com/drive/1fT9JozQAKx1VjGg0ocbxUGILcs5GWLid?usp=sharing): 17 May 2026
+- [**Lab 03**](https://colab.research.google.com/drive/1NvzP6OhNh5YlK-IrAE8zsahTLKhu0yuV?usp=sharing): 7 June 2026
 
 ## Weekly Assessment Notebooks
 
