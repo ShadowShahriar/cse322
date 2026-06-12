@@ -60,6 +60,7 @@ Course offered by,
 - [**Class 02-03**](https://shadowshahriar.github.io/cse322/notes/class-02-03.pdf): 13 May 2026
 - [**Class 04**](https://shadowshahriar.github.io/cse322/notes/class-04.pdf): 18 May 2026
 - [**Class 05**](https://shadowshahriar.github.io/cse322/notes/class-05.pdf): 8 June 2026
+- [**Class 06**](https://shadowshahriar.github.io/cse322/notes/class-06.pdf): 10 June 2026
 
 ## Colab Notebooks
 
