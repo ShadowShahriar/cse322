@@ -17,7 +17,7 @@
     3. [**Booleans**](#booleans)
 6. [**Operators**](#operators)
 7. [**Type Casting**]()
-8. [**Grouped Data**]()
+8. [**Collections**]()
     1. [**Lists**]()
     2. [**Tuples**]()
     3. [**Sets**]()
