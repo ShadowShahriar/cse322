@@ -16,15 +16,15 @@
         - [**Common String Methods**](#common-string-methods)
     3. [**Booleans**](#booleans)
 6. [**Operators**](#operators)
-7. [**Type Casting**]()
-8. [**Collections**]()
-    1. [**Lists**]()
-    2. [**Tuples**]()
-    3. [**Sets**]()
-    4. [**Key-Value Pairs (Dictionaries)**]()
-9. [**Conditionals**]()
-    1. [**If-Else**]()
-    2. [**Match (Switch Case)**]()
+7. [**Type Casting**](#type-casting)
+8. [**Collections**](#collections)
+    1. [**Lists**](#lists)
+    2. [**Tuples**](#tuples)
+    3. [**Sets**](#sets)
+    4. [**Key-Value Pairs (Dictionaries)**](#dictionaries)
+9. **Conditionals**
+    1. [**If-Else**](#if-else)
+    2. [**Match (Switch Case)**](#match)
 10. [**Loops**]()
     1. [**For Loops**]()
     2. [**While Loops**]()
@@ -579,5 +579,173 @@ One more value, or _object_ in this case, evaluates to `False`, and that is if y
 | ~        | NOT                  | Inverts all the bits                                                                                    | ~x      |
 | <<       | Zero fill left shift | Shift left by pushing zeros in from the right and let the leftmost bits fall off                        | x << 2  |
 | \>>      | Signed right shift   | Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off | x >> 2  |
+
+---
+
+## Type Casting
+
+Casting in python is therefore done using constructor functions:
+
+- **int():** constructs an integer number from an integer literal, a float literal (by removing all decimals), or a string literal (providing the string represents a whole number)
+
+- **float():** constructs a float number from an integer literal, a float literal or a string literal (providing the string represents a float or an integer)
+
+- **str():** constructs a string from a wide variety of data types, including strings, integer literals and float literals.
+
+---
+
+## Collections
+
+There are **4 built-in data types** in Python used to store collections of data and they are **List**, **Tuple**, **Set**, and **Dictionary**, all with different qualities and usage.
+
+### Lists
+
+```
+thislist = ["apple", "banana", "cherry"]
+thislist = list(("apple", "banana", "cherry")) # constructor
+```
+
+✅ ordered<br>
+✅ changeable<br>
+✅ allow duplicate values
+
+### Tuples
+
+Tuples are used to store multiple items in a single variable.
+
+```
+thistuple = ("apple", "banana", "cherry")
+thistuple = ("apple",)
+```
+
+✅ ordered<br>
+⛔ unchangeable<br>
+✅ allow duplicate values
+
+### Sets
+
+Sets are used to store multiple items in a single variable.
+
+```
+thisset = {"apple", "banana", "cherry"}
+```
+
+⛔ unordered<br>
+⛔ unchangeable\*<br>
+⛔ unindexed<br>
+⛔ does not allow duplicate values
+
+> Set _items_ are unchangeable, but we can remove items and add new items.
+
+### Dictionaries
+
+Dictionaries are used to store data values in `key:value` pairs.
+
+```
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+```
+
+✅ ordered\*<br>
+✅ changeable<br>
+⛔ does not allow duplicate values
+
+> As of Python version **3.7**, dictionaries are ordered. In Python **3.6 and earlier**, dictionaries are unordered.
+
+---
+
+## If-Else
+
+`if`, `elif`, and `else`:
+
+```
+a = 200
+b = 33
+if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
+else:
+  print("a is greater than b")
+```
+
+Shorthand `if`:
+
+```
+a = 5
+b = 2
+if a > b: print("a is greater than b")
+```
+
+Shorthand `if ... else`:
+
+```
+a = 2
+b = 330
+print("A") if a > b else print("B")
+```
+
+Assign a value with `if ... else`:
+
+```
+variable = value_if_true if condition else value_if_false
+```
+
+Nested `if` statements:
+
+```
+x = 41
+
+if x > 10:
+  print("Above ten,")
+  if x > 20:
+    print("and also above 20!")
+  else:
+    print("but not above 20.")
+```
+
+`pass` statement:
+
+```
+a = 33
+b = 200
+
+if b > a:
+  pass
+```
+
+> The `pass` statement is a **null operation** - nothing happens when it executes. It serves as a placeholder.
+
+---
+
+# Match
+
+The `match` statement is used to perform different actions based on different conditions. Instead of writing many `if..else` statements, you can use the `match` statement.
+
+```
+match expression:
+  case x:
+    code block
+  case y:
+    code block
+  case z:
+    code block
+  case _:      # === default block ===
+    code block
+```
+
+**Combining values:**
+
+```
+day = 4
+match day:
+  case 1 | 2 | 3 | 4 | 5:
+    print("Today is a weekday")
+  case 6 | 7:
+    print("I love weekends!")
+```
 
 ---
