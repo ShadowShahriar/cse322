@@ -149,4 +149,53 @@ python --version
     print("I will print on the same line.")
     ```
 
-- Text in Python must be inside quotes. We can use either `"` double quotes or `'` single quotes.
+- Text in Python must be inside quotes. We can use either `"` double quotes or `'` single quotes. However, unlike text, we don't put numbers inside quotes.
+
+    ```
+    print(3)
+    print(358)
+    print(50000)
+    ```
+
+- We can combine text and numbers in one output by separating them with a comma.
+
+    ```
+    print("I am", 35, "years old.")
+    ```
+
+---
+
+## Comments
+
+- Comments starts with a `#`, and Python will ignore them:
+
+    ```
+    # === this is a comment ===
+    print("Hello, World!")
+    ```
+
+- Comments can be placed at the end of a line, and Python will ignore the rest of the line:
+
+    ```
+    print("Hello, World!") # === this is a comment ===
+    ```
+
+- Python does not really have a syntax for multiline comments. To add a multiline comment we could insert a `#` for each line.
+
+    ```
+    # This is a comment
+    # written in
+    # more than just one line
+    print("Hello, World!")
+    ```
+
+- Since Python will ignore string literals that are not assigned to a variable, we can add a multiline string (**triple quotes**) in the code, and place out comment inside it:
+
+    ```
+    """
+    This is a comment
+    written in
+    more than just one line
+    """
+    print("Hello, World!")
+    ```
