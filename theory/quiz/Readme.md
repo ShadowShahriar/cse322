@@ -15,7 +15,7 @@
         - [**Escape Characters**](#escape-characters)
         - [**Common String Methods**](#common-string-methods)
     3. [**Booleans**](#booleans)
-6. [**Operators**]()
+6. [**Operators**](#operators)
 7. [**Type Casting**]()
 8. [**Grouped Data**]()
     1. [**Lists**]()
@@ -566,49 +566,49 @@ One more value, or _object_ in this case, evaluates to `False`, and that is if y
     - **not in:** Returns `True` if a sequence with the specified value is not present in the object.
 
 - <ins><b>Bitwise operators:</b></ins> Bitwise operators are used to compare (**binary**) numbers.
-    <table>
-    <tbody>
-    <tr>
-    <th>Operator</th>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Example</th>
-    </tr>
-    <tr>
-    <td>&amp;&nbsp;</td>
-    <td>AND</td>
-    <td>Sets each bit to 1 if both bits are 1</td>
-    <td>x &amp; y</td>
-    </tr>
-    <tr>
-    <td>|</td>
-    <td>OR</td>
-    <td>Sets each bit to 1 if one of two bits is 1</td>
-    <td>x | y</td>
-    </tr>
-    <tr>
-    <td>^</td>
-    <td>XOR</td>
-    <td>Sets each bit to 1 if only one of two bits is 1</td>
-    <td>x ^ y</td>
-    </tr>
-    <tr>
-    <td>~</td>
-    <td>NOT</td>
-    <td>Inverts all the bits</td>
-    <td>~x</td>
-    </tr>
-    <tr>
-    <td>&lt;&lt;</td>
-    <td>Zero fill left shift</td>
-    <td>Shift left by pushing zeros in from the right and let the leftmost bits fall off</td>
-    <td>x &lt;&lt; 2</td>
-    </tr>
-    <tr>
-    <td>&gt;&gt;</td>
-    <td>Signed right shift</td>
-    <td>Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off</td>
-    <td>x &gt;&gt; 2</td>
-    </tr>
-    </tbody>
-    </table>
+      <table>
+      <tbody>
+      <tr>
+      <th>Operator</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Example</th>
+      </tr>
+      <tr>
+      <td>&amp;&nbsp;</td>
+      <td>AND</td>
+      <td>Sets each bit to 1 if both bits are 1</td>
+      <td>x &amp; y</td>
+      </tr>
+      <tr>
+      <td>|</td>
+      <td>OR</td>
+      <td>Sets each bit to 1 if one of two bits is 1</td>
+      <td>x | y</td>
+      </tr>
+      <tr>
+      <td>^</td>
+      <td>XOR</td>
+      <td>Sets each bit to 1 if only one of two bits is 1</td>
+      <td>x ^ y</td>
+      </tr>
+      <tr>
+      <td>~</td>
+      <td>NOT</td>
+      <td>Inverts all the bits</td>
+      <td>~x</td>
+      </tr>
+      <tr>
+      <td>&lt;&lt;</td>
+      <td>Zero fill left shift</td>
+      <td>Shift left by pushing zeros in from the right and let the leftmost bits fall off</td>
+      <td>x &lt;&lt; 2</td>
+      </tr>
+      <tr>
+      <td>&gt;&gt;</td>
+      <td>Signed right shift</td>
+      <td>Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off</td>
+      <td>x &gt;&gt; 2</td>
+      </tr>
+      </tbody>
+      </table>
