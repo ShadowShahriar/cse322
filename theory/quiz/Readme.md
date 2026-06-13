@@ -7,9 +7,14 @@
 3. [**Output**](#output)
 4. [**Comments**](#comments)
 5. [**Variables and Data Types**](#variables-and-data-types)
-    1. [**Numbers**]()
-    2. [**Strings**]()
-    3. [**Booleans**]()
+    1. [**Numbers**](#numbers)
+    2. [**Strings**](#strings)
+        - [**String Slicing**](#string-slicing)
+        - [**String Manipulation**](#string-manipulation)
+        - [**F-Strings**](#f-strings)
+        - [**Escape Characters**](#escape-characters)
+        - [**Common String Methods**](#common-string-methods)
+    3. [**Booleans**](#booleans)
 6. [**Operators**]()
 7. [**Type Casting**]()
 8. [**Grouped Data**]()
@@ -266,5 +271,236 @@ myfunc()
 
 print("Python is " + x)
 ```
+
+<ins><b>Built-in data types:</b></ins>
+
+- **Text:** `str`
+- **Numeric:** `int`, `float`, `complex`
+- **Sequence:** `list`, `tuple`, `range`
+- **Map:** `dict`
+- **Set:** `set`, `frozenset`
+- **Boolean:** `bool`
+- **Binary:** `bytes`, `bytearray`, `memoryview`
+- **None:** `NoneType`
+
+Printing the data type of a variable `x`:
+
+```
+x = 5
+print(type(x))
+```
+
+---
+
+## Numbers
+
+Three numeric types in Python:
+
+- <ins><b>int:</b></ins> a whole number, positive or negative, without decimals, of unlimited length.
+
+    ```
+    x = 1
+    y = 35656222554887711
+    z = -3255522
+    ```
+
+- <ins><b>float:</b></ins> a number, positive or negative, containing one or more decimals. `float` can also be scientific numbers with an `e` to indicate the power of **10**.
+
+    ```
+    x = 1.10
+    y = 1.0
+    z = -35.59
+
+    x = 35e3
+    y = 12E4
+    z = -87.7e100
+    ```
+
+- <ins><b>complex:</b></ins> numbers that are written with a `j` as the imaginary part.
+
+    ```
+    x = 3+5j
+    y = 5j
+    z = -5j
+    ```
+
+- We can convert from one type to another with the `int()`, `float()`, and `complex()` methods.
+
+- A built-in module called `random` that can be used to make random numbers.
+
+    ```
+    import random
+
+    # === display a random number from 1 to 9 ===
+    print(random.randrange(1, 10))
+    ```
+
+---
+
+## Strings
+
+> Strings in Python are arrays of unicode characters. However, Python does not have a character data type, **a single character** is simply a string with a length of **1**.
+
+- We can use quotes inside a string, as long as they don't match the quotes surrounding the string:
+
+    ```
+    print("It's alright")
+    print("He is called 'Johnny'")
+    print('He is called "Johnny"')
+    ```
+
+- We can assign a multiline string to a variable by using three quotes:
+
+    ```
+    a = """Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt
+    ut labore et dolore magna aliqua."""
+
+    print(a)
+    ```
+
+- <ins><b>Looping Through a String:</b></ins>
+
+    ```
+    for x in "banana":
+    print(x)
+    ```
+
+- <ins><b>String Length:</b></ins>
+
+    ```
+    a = "Hello, World!"
+    print(len(a))
+    ```
+
+- <ins><b>Check String:</b></ins> To check if a certain phrase or character is present in a string, we can use the keyword `in`.
+
+    ```
+    # ====
+    # check if "free" is present:
+    # ====
+
+    txt = "The best things in life are free!"
+    print("free" in txt)
+
+    # ====
+    # check if "expensive" is NOT present:
+    # ====
+
+    txt = "The best things in life are free!"
+    print("expensive" not in txt)
+    ```
+
+### String Slicing
+
+Consider this string:
+
+```
+b = "Hello, World!"
+```
+
+Get the characters from **position 2** to **position 5** (_not included_):
+
+```
+print(b[2:5])
+```
+
+Get the characters from the start to **position 5** (_not included_):
+
+```
+print(b[:5])
+```
+
+Get the characters from **position 2**, and all the way to the end:
+
+```
+print(b[2:])
+```
+
+Get the characters:<br>From: **"o"** in "World!" (**position -5**)<br>To, but not included: **"d"** in "World!" (**position -2**):
+
+```
+b = "Hello, World!"
+print(b[-5:-2])
+```
+
+### String Manipulation
+
+- **Upper Case:** `upper()`
+- **Lower Case:** `lower()`
+- **Remove Whitespace:** `strip()`
+- **Replace:** `replace(from, to)`
+- **Split:** `split(separator)`
+- **Concatenation:** `string1 + string2`
+
+### F-Strings
+
+> We can combine strings and numbers by using **f-strings** or the `format()` method.
+
+```
+age = 36
+txt = f"My name is John, I am {age}"
+print(txt)
+```
+
+Display the price with 2 decimals:
+
+```
+price = 59
+txt = f"The price is {price:.2f} dollars"
+print(txt)
+```
+
+Perform a math operation in the placeholder, and return the result:
+
+```
+txt = f"The price is {20 * 59} dollars"
+print(txt)
+```
+
+### Escape Characters
+
+- **\'** (Single quote)
+- **\\\\** (Backslash)
+- **\n** (New line)
+- **\r** (Carriage Return)
+- **\t** (Tab)
+- **\b** (Backspace)
+- **\f** (Form feed)
+- **\ooo** (Octal value)
+- **\xhh** (Hex value)
+
+### Common String Methods
+
+- **capitalize()**
+- **count()**
+- **find()**
+- **islower()**
+- **isupper()**
+- **format()**
+- **upper()**
+- **lower()**
+- **startswith()**
+- **endswith()**
+- **strip()**
+- **title()**
+- **swapcase()**
+
+---
+
+## Booleans
+
+Almost any value is evaluated to `True` if it has some sort of content.
+
+- Any string is `True`, except **empty strings**.
+- Any number is `True`, except **0**.
+- Any list, tuple, set, and dictionary are `True`, except **empty ones**.
+
+There are not many values that evaluate to `False`, except empty values, such as `()`, `[]`, `{}`, `""`, the number `0`, and the value `None`.
+
+One more value, or _object_ in this case, evaluates to `False`, and that is if you have an object that is made from a class with a `__len__` function that returns `0` or `False`:
+
+> Python has many built-in functions that return a boolean value, like the `isinstance()` function, which can be used to determine if an object is of a certain data type.
 
 ---
