@@ -80,47 +80,47 @@ python --version
 
 - <ins><b>Variable:</b></ins> A variable is created when you assign a value to it. **Python has no command for declaring a variable.**
 
-    ```python
+    ```
     x = 5
     y = "Hello, World!"
     ```
 
 - <ins><b>Comment:</b></ins> Comments start with a `#`, and Python will render the rest of the line as a comment.
 
-    ```python
+    ```
     # === this is a comment. ===
     print("Hello, World!")
     ```
 
 - <ins><b>Expression:</b></ins> Evaluates data to produce a single value.
 
-    ```python
+    ```
     2 + 3
     ```
 
-    ```python
+    ```
     len("apple")
     ```
 
 - <ins><b>Statement:</b></ins> A statement is a complete instruction that tells the Python interpreter to perform a specific action. Python splits statements into two primary groups: **Simple statements** and **Compound statements**:
     1. <ins><b>Simple Statements:</b></ins>
         - **Assignment:** `age = 25`
-        - **Expression:** `print("Hello, World!")`
+        - **Expression:** `print("Hi!")`
         - **Loop Control:** `break`
         - **Import:** `import numpy as np`
     2. <ins><b>Compound Statements:</b></ins>
         - **Conditional**
-            ```python
+            ```
             if score >= 90:
                 print("Grade: A")
             ```
         - **Loop**
-            ```python
+            ```
             for item in [1, 2, 3]:
                 print(item)
             ```
         - **Context Manager**
-            ```python
+            ```
             with open("data.txt") as file:
             content = file.read()
             ```
