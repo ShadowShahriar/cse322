@@ -114,16 +114,21 @@ python --version
 
     2. <ins><b>Compound Statements:</b></ins>
         - **Conditional**
+
             ```
             if score >= 90:
                 print("Grade: A")
             ```
+
         - **Loop**
+
             ```
             for item in [1, 2, 3]:
                 print(item)
             ```
+
         - **Context Manager**
+
             ```
             with open("data.txt") as file:
             content = file.read()
