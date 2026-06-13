@@ -3,8 +3,8 @@
 ## Topic List
 
 1. [**Basics of Python**](#basics-of-python)
-2. [**Syntax**]()
-3. [**Output**]()
+2. [**Syntax**](#syntax)
+3. [**Output**](#output)
 4. [**Comments**]()
 5. [**Variables and Data Types**]()
     1. [**Numbers**]()
@@ -74,6 +74,8 @@ python --version
 - The alias for `python` is `py`.
 - The exit command is `exit()`.
 
+---
+
 ## Syntax
 
 - <ins><b>Indentation:</b></ins> Refers to the spaces at the beginning of a code line. Python uses indentation to indicate a block of code. The most common number of spaces used is **4**, but it has to be at least **1**.
@@ -133,3 +135,18 @@ python --version
             with open("data.txt") as file:
             content = file.read()
             ```
+
+- <ins><b>Semicolons:</b></ins> Semicolons are **optional** in Python. You can write multiple statements on one line by separating them with ; but this is rarely used.
+
+---
+
+## Output
+
+- We can use the `print()` function to display text or output values. By default, the `print()` function ends with a new line. If we want to print multiple words on the same line, we can use the end parameter:
+
+    ```
+    print("Hello World!", end=" ")
+    print("I will print on the same line.")
+    ```
+
+- Text in Python must be inside quotes. We can use either `"` double quotes or `'` single quotes.
