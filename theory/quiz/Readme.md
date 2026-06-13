@@ -105,9 +105,13 @@ python --version
 - <ins><b>Statement:</b></ins> A statement is a complete instruction that tells the Python interpreter to perform a specific action. Python splits statements into two primary groups: **Simple statements** and **Compound statements**:
     1. <ins><b>Simple Statements:</b></ins>
         - **Assignment:** `age = 25`
+
         - **Expression:** `print("Hi!")`
+
         - **Loop Control:** `break`
+
         - **Import:** `import numpy as np`
+
     2. <ins><b>Compound Statements:</b></ins>
         - **Conditional**
             ```
