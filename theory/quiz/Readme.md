@@ -25,10 +25,10 @@
 9. **Conditionals**
     1. [**If-Else**](#if-else)
     2. [**Match (Switch Case)**](#match)
-10. [**Loops**]()
-    1. [**For Loops**]()
-    2. [**While Loops**]()
-11. [**Ranges**]()
+10. **Loops**
+    1. [**For Loops**](#for-loops)
+    2. [**While Loops**](#while-loops)
+11. [**Functions**](#functions)
 12. [**Arrays**]()
 13. [**Iterators**]()
 14. [**Modules (Packages)**]()
@@ -749,3 +749,176 @@ match day:
 ```
 
 ---
+
+## For Loops
+
+A `for` loop is used for iterating over a sequence (that is either a _list_, a _tuple_, a _dictionary_, a _set_, or a _string_).
+
+```
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+```
+
+### Looping a string
+
+```
+for x in "banana":
+  print(x)
+```
+
+### break
+
+Exit the loop when `x` is "banana":
+
+```
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+  if x == "banana":
+    break
+```
+
+### continue
+
+Do not print "banana":
+
+```
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    continue
+  print(x)
+```
+
+### range()
+
+To loop through a set of code a specified number of times, we can use the `range()` function, The `range()` function returns a sequence of numbers, starting from **0** by default, and increments by **1** (by default), and ends at a specified number.
+
+```
+for x in range(6): # 0 to 5
+  print(x)
+```
+
+The `range()` function defaults to increment the sequence by **1**, however it is possible to specify the increment value by adding a third parameter: `range(0, 6, 2)`
+
+### else
+
+the `else` keyword in a for loop specifies a block of code to be executed when the loop is finished.
+
+Print all numbers from **0** to **5**, and print a message when the loop has ended:
+
+```
+for x in range(6):
+  print(x)
+else:
+  print("Finally finished!")
+```
+
+> The `else` block will **NOT** be executed if the loop is stopped by a `break` statement.
+
+### Nested loops
+
+```
+adj = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
+
+for x in adj:
+  for y in fruits:
+    print(x, y)
+```
+
+### pass
+
+```
+for x in [0, 1, 2]:
+  pass
+```
+
+---
+
+## While Loops
+
+> With the `while` loop, we can execute a set of statements as long as a condition is true.
+
+```
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+```
+
+### break
+
+Exit the loop when `i` is `3`.
+
+```
+i = 1
+while i < 6:
+  print(i)
+  if i == 3:
+    break
+  i += 1
+```
+
+### continue
+
+Continue to the next iteration if `i` is `3`.
+
+```
+i = 0
+while i < 6:
+  i += 1
+  if i == 3:
+    continue
+  print(i)
+```
+
+### else
+
+Print a message once the condition is false.
+
+```
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+else:
+  print("i is no longer less than 6")
+```
+
+---
+
+## Functions
+
+- A function is a block of code which only runs when it is called.
+- A function can return data as a result.
+- A function helps avoiding code repetition.
+
+```
+def my_function():
+  print("Hello from a function")
+```
+
+- A function name must start with a letter or underscore,
+- A function name can only contain letters, numbers, and underscores,
+- Function names are **case-sensitive**. (`myFunction` and `myfunction` are different)
+
+Functions can send data back to the code that called them using the `return` statement.
+
+```
+def get_greeting():
+  return "Hello from a function"
+
+message = get_greeting()
+print(message)
+```
+
+If a function doesn't have a return statement, it returns `None` by default.
+
+Function definitions cannot be empty. If we need to create a function placeholder without any code, use the pass statement:
+
+```
+def my_function():
+  pass
+```
