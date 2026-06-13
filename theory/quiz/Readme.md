@@ -5,8 +5,8 @@
 1. [**Basics of Python**](#basics-of-python)
 2. [**Syntax**](#syntax)
 3. [**Output**](#output)
-4. [**Comments**]()
-5. [**Variables and Data Types**]()
+4. [**Comments**](#comments)
+5. [**Variables and Data Types**](#variables-and-data-types)
     1. [**Numbers**]()
     2. [**Strings**]()
     3. [**Booleans**]()
@@ -80,7 +80,7 @@ python --version
 
 - <ins><b>Indentation:</b></ins> Refers to the spaces at the beginning of a code line. Python uses indentation to indicate a block of code. The most common number of spaces used is **4**, but it has to be at least **1**.
 
-- <ins><b>Variable:</b></ins> A variable is created when you assign a value to it. **Python has no command for declaring a variable.**
+- <ins><b>Variable:</b></ins> A variable is created when we assign a value to it. **Python has no command for declaring a variable.**
 
     ```
     x = 5
@@ -136,7 +136,7 @@ python --version
             content = file.read()
             ```
 
-- <ins><b>Semicolons:</b></ins> Semicolons are **optional** in Python. You can write multiple statements on one line by separating them with ; but this is rarely used.
+- <ins><b>Semicolons:</b></ins> Semicolons are **optional** in Python. We can write multiple statements on one line by separating them with `;` but this is rarely used.
 
 ---
 
@@ -199,3 +199,72 @@ python --version
     """
     print("Hello, World!")
     ```
+
+---
+
+## Variables and Data Types
+
+> Variables are containers for storing data values.
+
+- Python has no command for **declaring a variable**.
+- A variable is created the moment we first **assign a value to it**.
+- Variables do not need to be declared with any particular type, and can even **change type after they have been set**.
+- String variables can be declared either by using single or double quotes.
+- Variable names are **case-sensitive**.
+
+<ins><b>Rules for variable names:</b></ins>
+
+- A variable name must start with a letter or the underscore character,
+- A variable name cannot start with a number,
+- A variable name can only contain alpha-numeric characters and underscores, (**A-Z, a-z, 0-9, and \_**)
+- Variable names are case-sensitive, (`age`, `Age` and `AGE` are three different variables)
+- A variable name cannot be any of the **Python keywords.**
+
+<ins><b>Name cases:</b></ins>
+
+- **Camel Case:** Each word, except the first, starts with a capital letter.
+- **Pascal Case:** Each word starts with a capital letter.
+- **Snake Case:** Each word is separated by an underscore character.
+
+<ins><b>Value assignment:</b></ins>
+
+1. **Many Values to Multiple Variables:**
+
+    ```
+    x, y, z = "Orange", "Banana", "Cherry"
+    print(x)
+    print(y)
+    print(z)
+    ```
+
+2. **One Value to Multiple Variables**
+
+    ```
+    x = y = z = "Orange"
+    print(x)
+    print(y)
+    print(z)
+    ```
+
+<ins><b>Global variables:</b></ins> Variables that are created outside of a function are known as global variables. Global variables can be used by everyone, both inside of functions and outside.
+
+> If we create a variable with **the same name** inside a function, this variable will be local, and can only be used inside the function. The global variable with the same name **will remain as it was**, global and **with the original value**.
+
+<ins><b>Global keyword:</b></ins> Normally, when we create a variable inside a function, that variable is local, and can only be used inside that function.
+
+- To create a global variable inside a function, we can use the `global` keyword.
+- We can use the `global` keyword if you want to change a global variable inside a function.
+
+```
+x = "awesome"
+
+def myfunc():
+  global x
+  x = "fantastic"
+
+myfunc()
+
+print("Python is " + x)
+```
+
+---
