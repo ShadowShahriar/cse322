@@ -34,6 +34,8 @@
 
 - Python was created by **Guido van Rossum**.
 - It was first released in **1991**.
+- The current release of Python is **3.14.6** as of **10 June 2026**.
+- Official website: **https://www.python.org/**
 
 <ins><b>Applications of Python:</b></ins>
 
@@ -45,7 +47,7 @@
 
 <ins><b>Characteristics of Python:</b></ins>
 
-- Works on **Windows**, **Mac**, **Linux**, and Raspberry Pi.
+- Works on **Windows**, **Mac**, **Linux**, and **Raspberry Pi**.
 - Runs on an interpreter system, meaning that code can be executed as soon as it is written.
 - Useful for quick prototyping.
 - Relies on indentation, using whitespace, to define scope; such as the scope of _loops_, _functions_ and _classes_. Other programming languages often use curly-brackets for this purpose.
@@ -55,3 +57,70 @@
 - It was designed for readability, and has some similarities to the English language with influence from mathematics.
 - It has syntax that allows developers to write programs with fewer lines than some other programming languages.
 - Python can be treated in a **procedural way**, an **object-oriented way** or a **functional way**.
+
+<ins><b>Common IDEs for Python Development:</b></ins>
+
+- Thonny
+- PyCharm
+- Netbeans
+- Eclipse
+
+<ins><b>Checking Python installation:</b></ins>
+
+```bash
+python --version
+```
+
+- The alias for `python` is `py`.
+- The exit command is `exit()`.
+
+## Syntax
+
+- <ins><b>Indentation:</b></ins> Refers to the spaces at the beginning of a code line. Python uses indentation to indicate a block of code. The most common number of spaces used is **4**, but it has to be at least **1**.
+
+- <ins><b>Variable:</b></ins> A variable is created when you assign a value to it. **Python has no command for declaring a variable.**
+
+    ```python
+    x = 5
+    y = "Hello, World!"
+    ```
+
+- <ins><b>Comment:</b></ins> Comments start with a `#`, and Python will render the rest of the line as a comment.
+
+    ```python
+    # === this is a comment. ===
+    print("Hello, World!")
+    ```
+
+- <ins><b>Expression:</b></ins> Evaluates data to produce a single value.
+
+    ```python
+    2 + 3
+    ```
+
+    ```python
+    len("apple")
+    ```
+
+- <ins><b>Statement:</b></ins> A statement is a complete instruction that tells the Python interpreter to perform a specific action. Python splits statements into two primary groups: **Simple statements** and **Compound statements**:
+    1. <ins><b>Simple Statements:</b></ins>
+        - **Assignment:** `age = 25`
+        - **Expression:** `print("Hello, World!")`
+        - **Loop Control:** `break`
+        - **Import:** `import numpy as np`
+    2. <ins><b>Compound Statements:</b></ins>
+        - **Conditional**
+            ```python
+            if score >= 90:
+                print("Grade: A")
+            ```
+        - **Loop**
+            ```python
+            for item in [1, 2, 3]:
+                print(item)
+            ```
+        - **Context Manager**
+            ```python
+            with open("data.txt") as file:
+            content = file.read()
+            ```
