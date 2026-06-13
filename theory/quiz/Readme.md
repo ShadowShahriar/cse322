@@ -554,15 +554,19 @@ One more value, or _object_ in this case, evaluates to `False`, and that is if y
 
 - <ins><b>Logical operators:</b></ins> Logical operators are used to combine conditional statements.
     - **AND:** Returns `True` if both statements are true
+
     - **OR:** Returns `True` if one of the statements is true.
+
     - **NOT:** Reverse the result, returns `False` if the result is true.
 
 - <ins><b>Identity operators:</b></ins> Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location.
     - **is:** Returns `True` if both variables are the same object.
+
     - **is not:** Returns `True` if both variables are not the same object.
 
 - <ins><b>Membership operators:</b></ins> Membership operators are used to test if a sequence is presented in an object.
     - **in:** Returns `True` if a sequence with the specified value is present in the object.
+
     - **not in:** Returns `True` if a sequence with the specified value is not present in the object.
 
 - <ins><b>Bitwise operators:</b></ins> Bitwise operators are used to compare (**binary**) numbers.
@@ -575,3 +579,5 @@ One more value, or _object_ in this case, evaluates to `False`, and that is if y
 | ~        | NOT                  | Inverts all the bits                                                                                    | ~x      |
 | <<       | Zero fill left shift | Shift left by pushing zeros in from the right and let the leftmost bits fall off                        | x << 2  |
 | \>>      | Signed right shift   | Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off | x >> 2  |
+
+---
