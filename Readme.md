@@ -26,6 +26,11 @@ Course offered by,
 
 > All course materials will be stored in this dedicated [**Google Drive folder**](https://drive.google.com/drive/folders/1jBeUkvQco9jlseqo1Vu6jyprRT6lif3H?usp=drive_link).
 
+## Theory Quick Notes
+
+- [**Quiz**](https://shadowshahriar.github.io/cse322/theory/quiz/#quiz)
+    - [Topic List](https://shadowshahriar.github.io/cse322/theory/quiz/#topic-list)
+
 <!-- ## Theory Quick Notes
 
 - [**Mid Term Examination**](https://shadowshahriar.github.io/cse322/theory/mid/#mid-term-examination)
