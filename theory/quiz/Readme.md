@@ -67,7 +67,7 @@
 
 <ins><b>Checking Python installation:</b></ins>
 
-```bash
+```
 python --version
 ```
 
