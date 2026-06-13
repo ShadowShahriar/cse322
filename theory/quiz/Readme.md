@@ -504,3 +504,111 @@ One more value, or _object_ in this case, evaluates to `False`, and that is if y
 > Python has many built-in functions that return a boolean value, like the `isinstance()` function, which can be used to determine if an object is of a certain data type.
 
 ---
+
+## Operators
+
+> If two operators have the same precedence, the expression is evaluated from left to right.
+
+- <ins><b>Arithmetic operators:</b></ins> Arithmetic operators are used with numeric values to perform common mathematical operations.
+
+    ```
+    print(x + y)
+    print(x - y)
+    print(x * y)
+    print(x / y)
+    print(x % y)
+    print(x ** y)
+    print(x // y)
+    ```
+
+    - **/** - Division (always returns a float)
+    - **//** - Floor division (always returns the nearest floor integer)
+
+- <ins><b>Assignment operators:</b></ins> Assignment operators are used to assign values to variables.
+    - **Python 3.8** introduced the `:=` operator, known as the **walrus operator**. It assigns values to variables as part of a larger expression: `print(x := 3)`
+
+- <ins><b>Ternary operators:</b></ins> The ternary operator is **not** an actual operator, it is a conditional expression, or a shorthand if statement.
+
+    ```
+    num = 6
+    x = "Weekend" if num > 5 else "Workday"
+    print(x)
+    ```
+
+- <ins><b>Comparison operators:</b></ins> Comparison operators are used to compare two values.
+
+    ```
+    x = 5
+    y = 3
+    print(x == y)
+    print(x != y)
+    print(x > y)
+    print(x < y)
+    print(x >= y)
+    print(x <= y)
+
+    x = 5
+    print(1 < x < 10)
+    print(1 < x and x < 10)
+    ```
+
+- <ins><b>Logical operators:</b></ins> Logical operators are used to combine conditional statements.
+    - **AND:** Returns `True` if both statements are true
+    - **OR:** Returns `True` if one of the statements is true.
+    - **NOT:** Reverse the result, returns `False` if the result is true.
+
+- <ins><b>Identity operators:</b></ins> Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location.
+    - **is:** Returns `True` if both variables are the same object.
+    - **is not:** Returns `True` if both variables are not the same object.
+
+- <ins><b>Membership operators:</b></ins> Membership operators are used to test if a sequence is presented in an object.
+    - **in:** Returns `True` if a sequence with the specified value is present in the object.
+    - **not in:** Returns `True` if a sequence with the specified value is not present in the object.
+
+- <ins><b>Bitwise operators:</b></ins> Bitwise operators are used to compare (**binary**) numbers.
+    <table>
+    <tbody>
+    <tr>
+    <th>Operator</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Example</th>
+    </tr>
+    <tr>
+    <td>&amp;&nbsp;</td>
+    <td>AND</td>
+    <td>Sets each bit to 1 if both bits are 1</td>
+    <td>x &amp; y</td>
+    </tr>
+    <tr>
+    <td>|</td>
+    <td>OR</td>
+    <td>Sets each bit to 1 if one of two bits is 1</td>
+    <td>x | y</td>
+    </tr>
+    <tr>
+    <td>^</td>
+    <td>XOR</td>
+    <td>Sets each bit to 1 if only one of two bits is 1</td>
+    <td>x ^ y</td>
+    </tr>
+    <tr>
+    <td>~</td>
+    <td>NOT</td>
+    <td>Inverts all the bits</td>
+    <td>~x</td>
+    </tr>
+    <tr>
+    <td>&lt;&lt;</td>
+    <td>Zero fill left shift</td>
+    <td>Shift left by pushing zeros in from the right and let the leftmost bits fall off</td>
+    <td>x &lt;&lt; 2</td>
+    </tr>
+    <tr>
+    <td>&gt;&gt;</td>
+    <td>Signed right shift</td>
+    <td>Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off</td>
+    <td>x &gt;&gt; 2</td>
+    </tr>
+    </tbody>
+    </table>
