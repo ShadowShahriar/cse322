@@ -47,11 +47,10 @@ Course offered by,
     - [Theoretical Questions](https://shadowshahriar.github.io/cse322/theory/final/#theoretical-questions)
     - [CT Questions](https://shadowshahriar.github.io/cse322/theory/final/#ct-questions) -->
 
-<!-- ## Practice Problems
+## Practice Problems
 
-- **Mid Term Examination**
+- **CT Examination**
     - [**01:**](https://shadowshahriar.github.io/cse322/notes/practice-01.pdf)
-    - [**02:**](https://shadowshahriar.github.io/cse322/notes/practice-02.pdf) -->
 
 <!-- ## Assignment
 
