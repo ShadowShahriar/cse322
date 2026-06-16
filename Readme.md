@@ -50,7 +50,7 @@ Course offered by,
 ## Practice Problems
 
 - **CT Examination**
-    - [**01:**](https://shadowshahriar.github.io/cse322/notes/practice-01.pdf)
+    - [**01: PEAS, Goal-based Agents, Branches of AI**](https://shadowshahriar.github.io/cse322/notes/practice-01.pdf)
 
 <!-- ## Assignment
 
