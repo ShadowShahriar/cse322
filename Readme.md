@@ -31,14 +31,13 @@ Course offered by,
 - [**Quiz**](https://shadowshahriar.github.io/cse322/theory/quiz/#quiz)
     - [Topic List](https://shadowshahriar.github.io/cse322/theory/quiz/#topic-list)
 
-<!-- ## Theory Quick Notes
-
 - [**Mid Term Examination**](https://shadowshahriar.github.io/cse322/theory/mid/#mid-term-examination)
     - [Topic List](https://shadowshahriar.github.io/cse322/theory/mid/#topic-list)
-    - [Full Forms](https://shadowshahriar.github.io/cse322/theory/mid/#full-forms)
     - [Definitions](https://shadowshahriar.github.io/cse322/theory/mid/#definitions)
     - [Theoretical Questions](https://shadowshahriar.github.io/cse322/theory/mid/#theoretical-questions)
     - [CT Questions](https://shadowshahriar.github.io/cse322/theory/mid/#ct-questions)
+
+<!--
 
 - [**Final Term Examination**](https://shadowshahriar.github.io/cse322/theory/final/#final-term-examination)
     - [Topic List](https://shadowshahriar.github.io/cse322/theory/final/#topic-list)

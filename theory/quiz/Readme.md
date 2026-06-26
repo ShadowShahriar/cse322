@@ -29,9 +29,9 @@
     1. [**For Loops**](#for-loops)
     2. [**While Loops**](#while-loops)
 11. [**Functions**](#functions)
-12. [**Arrays**]()
-13. [**Iterators**]()
-14. [**Modules (Packages)**]()
+12. **Arrays**
+13. **Iterators**
+14. **Modules (Packages)**
 
 ---
 
