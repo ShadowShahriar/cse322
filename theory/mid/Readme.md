@@ -3,10 +3,10 @@
 ## Topic List
 
 1. **Lecture 1**
-    - Artificial Intelligence ✔️
-    - Significance of Studying AI ✔️
-    - Applications of AI ✔️
-    - Relevant Fields of AI ✔️
+    - Artificial Intelligence ✅
+    - Significance of Studying AI ✅
+    - Applications of AI ✅
+    - Relevant Fields of AI ✅
     - Goals of AI
     - Turing Test
     - Building an Intelligent Agent
