@@ -1,4 +1,4 @@
-i# Mid Term Examination
+# Mid Term Examination
 
 ## Topic List
 
