@@ -93,4 +93,74 @@ The progression from raw facts to actionable insight is typically explained usin
 
 4. <ins><b>Wisdom:</b></ins> **True wisdom requires foresight, ethics, and human conscience.** The AI provides the **Knowledge**, but the human applies the **Wisdom** to make the final ethical, strategic, or long-term decision.
 
+### 1.3. Applications of AI
+
+1. <ins><b>Computer Vision (CV)</b></ins>
+    - Deals with visual data, (images and videos)
+    - Understand content and extract insights.
+
+    > **Example:** Automated Food Delivery Robot.
+
+2. <ins><b>Natural Language Processing (NLP)</b></ins>
+    - Deals with text content,
+    - Interacts with natural language.
+    - Includes **STT** (Speech to Text) and **TTS** (Text to Speech)
+
+    > **Examples:**
+    >
+    > - Deliver accurate search results.
+    > - Detect malicious/harmful/hate speech.
+
+3. <ins><b>Speech Recognition (SR)</b></ins>
+    - Hear and understand spoken words.
+
+    > **Example:** Google Assistant.
+
+4. <ins><b>Expert Systems (ES)</b></ins>
+    - Systems like this provide advice or make decisions.
+
+    > **Working Fields:** Finance, Medicine, Marketing.
+
+5. <ins><b>Games</b></ins>
+    - Design intelligent agents that complete with human players.
+
+    > **Example:** GTA-V.
+
+6. <ins><b>Robotics</b></ins>
+    - Combines many concepts of AI.
+    - Consists of sensors and actuators.
+    - Capable of adapting to new environments.
+
+    > **Example:** Roomba.
+
+### 1.4. Expert Systems of AI
+
+An Expert System is a branch of Artificial Intelligence designed to simulate the decision-making ability of a human expert.
+
+An expert system consists of three main parts:
+
+1. <ins><b>Knowledge Base:</b></ins> The "library" that stores all facts, data, and rules specific to the domain (e.g., medicine, engineering, finance)
+
+2. <ins><b>Inference Engine:</b></ins> The "brain" of the system. It applies logical reasoning to the knowledge base to analyze user inputs and deduce a solution.
+
+3. <ins><b>User Interface:</b></ins> The communication layer that allows a user to input a problem and receive a recommendation or diagnosis.
+
+<p align="center"><img src="img02.png"/><br><i><u>figure 1.4.: Working of Expert Systems.</u></i></p>
+
+Unlike many modern AI "black boxes," expert systems are highly interpretable. They use a few specific methods to reach conclusions:
+
+1. <ins><b>If-Then Rules:</b></ins> Knowledge is often stored as statements like:
+
+    ```
+    IF symptom A AND symptom B, THEN disease C
+    ```
+
+2. <ins><b>Forward Chaining:</b></ins> Starts with known facts and applies rules to find a conclusion.
+
+    > "Checking symptoms to determine a diagnosis."
+
+3. <ins><b>Backward Chaining:</b></ins> Starts with a specific goal and works backward to find evidence that supports it.
+
+    > "Verifying if a user has diabetes by looking for supporting symptoms."
+
 ## CT Questions
