@@ -12,7 +12,7 @@
         - [**Acting Humanly**](#17b-acting-humanly) ✅
         - [**Thinking Rationally**](#17d-thinking-rationally) ✅
     - [**Turing Test**](#18-turing-test) ✅
-    - Building an Intelligent Agent
+    - [**Building an Intelligent Agent**](#19-building-an-intelligent-agent) ✅
     - [**Strong AI vs Weak AI**](#110-strong-ai-vs-weak-ai) ✅
     - [**Alan Turing**](#111-alan-turing) ✅
 
@@ -292,6 +292,16 @@ The judge relies on nuanced behavioral indicators to determine which participant
 ---
 
 ### 1.9. Building an Intelligent Agent
+
+Building an intelligent agent involves designing a system that perceives its surroundings, reasons through information, and autonomously takes action to achieve a specific goal.
+
+Here is how an input is converted into an action:
+
+<p align="center"><img src="img05.png"/><br><i><u>figure 1.9A.: Input to Action.</u></i></p>
+
+A general working diagram of an intelligent agent:
+
+<p align="center"><img src="img06.png"/><br><i><u>figure 1.9B.: Working diagram of an intelligent agent.</u></i></p>
 
 ---
 
