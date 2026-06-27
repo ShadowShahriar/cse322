@@ -3,15 +3,17 @@
 ## Topic List
 
 1. **Lecture 1**
-    - Artificial Intelligence ✅
-    - Significance of Studying AI ✅
-    - Applications of AI ✅
-    - Relevant Fields of AI ✅
-    - Goals of AI
-    - Turing Test
+    - [**Artificial Intelligence**](#artificial-intelligence) ✅
+    - [**Significance of Studying AI**](#11-why-do-we-need-to-study-ai) ✅
+    - [**Applications of AI**](#13-applications-of-ai) ✅
+    - [**Relevant Fields of AI**](#16-relevant-fields-of-ai) ✅
+    - [**Goals of AI**](#17-goals-of-ai) ✅
+        - [**Thinking Humanly**](#17a-thinking-humanly) ✅
+        - [**Acting Humanly**](#17b-acting-humanly) ✅
+        - [**Thinking Rationally**](#17d-thinking-rationally) ✅
+    - [**Turing Test**](#18-turing-test) ✅
     - Building an Intelligent Agent
     - Strong AI vs Weak AI
-    - Importance of AI
     - Alan Turing
 
 2. **Lecture 2**
@@ -214,6 +216,76 @@ Unlike many modern AI "black boxes," expert systems are highly interpretable. Th
 
 7. <ins><b>Genetic Programming (GP)</b></ins>
     - Genetic Programming is a subfield of artificial intelligence where computers automatically write and evolve executable code by mimicking biological evolution.
+
+---
+
+### 1.7. Goals of AI
+
+1. Systems thinking like humans (**Thinking Humanly**)
+2. Systems acting like humans (**Acting Humanly**)
+3. Systems thinking rationally (**Thinking Rationally**)
+4. Systems acting rationally (Acting Rationally) ⛔
+
+### 1.7A. Thinking Humanly
+
+> This approach focuses on how the human mind works.
+
+- **The Goal:** To understand the actual internal mechanisms of human thought, including memory, problem-solving, and decision-making.
+
+- **Working Principle:** Instead of just getting the right answer, the AI must go about solving the problem using the exact same steps and intermediate states a human brain would.
+
+- **Primary Focus:** Research and academic fields attempting to map human psychology and neurology.
+
+### 1.7B. Acting Humanly
+
+> This approach focuses purely on outward behavior rather than internal mechanics.
+
+- **The Goal:** To exhibit behavior that is indistinguishable from a human. If the AI can interact, converse, and react like a person, it is successful.
+
+- **Working Principle:** The machine's internal architecture does not need to mirror the human brain at all; it just needs to fool an observer into believing it is a human.
+
+- **Primary Focus:** Practical applications like chatbots, virtual assistants, and social robots.
+
+### 1.7C. Thinking Humanly vs Acting Humanly
+
+> The main distinction is process vs. output.
+
+**"Thinking humanly"** requires the machine to undergo human-like thought processes, whereas **"acting humanly"** only requires the machine to produce human-like results.
+
+Many modern systems, like LLMs, excel at **acting humanly** (through natural language generation) but generally DO NOT **think humanly**.
+
+### 1.7D. Thinking Rationally
+
+Systems that make decisions based on logical reasoning and formal inference, aiming to deduce the "right" conclusions from available knowledge.
+
+While human thinking involves biases and emotions, rational AI relies on mathematics and rules to achieve flawless logical consistency.
+
+- **The Goal:** Formalize the reasoning process as a system of logical rules and procedures for inference.
+
+- **The Issue:** Not all problems can be solved just by reasoning and inferences.
+
+---
+
+### 1.8. Turing Test
+
+Turing Test evaluates an AI's ability to exhibit human-like intelligence. In a text-only conversation, a human judge interacts with both a human and an AI. If the judge cannot reliably tell which participant is the machine, the AI is considered to have passed the test.
+
+Example of a Turing Test:
+
+| Actor                          | Dialogue                                                                                                                                                                                                     |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Judge**                      | Describe a time you accidentally ruined a meal.                                                                                                                                                              |
+| Player&nbsp;A&nbsp;(**AI**)    | I was trying to bake a chocolate cake for my roommate’s birthday. I misread the recipe and used a whole cup of salt instead of sugar. It looked perfect on the outside, but one bite ruined the whole party. |
+| Player&nbsp;B&nbsp;(**Human**) | Oh no! I once made spaghetti for a date, but I got distracted by a phone call and burnt the noodles completely dry. The smoke alarm went off and we ended up ordering pizza.                                 |
+| **Judge**                      | How does that memory make you feel?                                                                                                                                                                          |
+| Player&nbsp;A&nbsp;(**AI**)    | It was definitely a learning experience. I always double-check the labels on my baking ingredients now.                                                                                                      |
+| Player&nbsp;B&nbsp;(**Human**) | Honestly, I was so embarrassed at the time, but now it's just a funny story we laugh about. We actually still order pizza from that same place every year.                                                   |
+
+The judge relies on nuanced behavioral indicators to determine which participant is the machine:
+
+- **Over-perfection:** AIs sometimes answer questions too logically or smoothly, while humans often use filler words (e.g., "uh," "well") or express more complex emotional vulnerability.
+- **Quirks and Humor:** A human is more likely to make random typos, relate to shared cultural experiences, or bring up irrelevant but realistic details.
+- **The "Trick" Question:** Judges often use riddles or questions that require abstract thinking.
 
 ---
 
