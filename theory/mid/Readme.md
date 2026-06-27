@@ -20,8 +20,8 @@
     - [**Knowledge and Data**](#21-knowledge-and-data) ✅
     - [**Inference**](#inference) ✅
     - [**Agent**](#22-agent) ✅
-        - Intelligent Agent
-    - Task Environment
+    - [**The PEAS Framework**](#23-the-peas-framework) ✅
+    - [**Task Environment**](#24-task-environment) ✅
     - Types of Agent
     - Learning
     - Classification (_Partial_)
@@ -74,11 +74,15 @@ Inference is the operational phase of artificial intelligence where a trained mo
 
 An agent function is a theoretical mathematical mapping that dictates exactly how an autonomous system should respond based on the history of everything it has perceived.
 
+[**↪ Agent**](#22-agent)
+
 ---
 
 ### Perception
 
 Perception in Agentic AI is the foundational process by which an autonomous system continuously gathers, interprets, and prioritizes data from its environment.
+
+[**↪ Agent**](#22-agent)
 
 ---
 
@@ -361,13 +365,18 @@ A general working diagram of an intelligent agent:
 1. <ins><b>Data:</b></ins> Raw, uninterpreted, and disconnected facts.
 
 2. <ins><b>Knowledge:</b></ins> The understanding, application, and contextual synthesis of unorganized, row facts (_data_).
+    - **Declarative:** Passive knowledge expressed as facts (_theoritical knowledge_)
+
+    - **Procedural:** Compiled knowledge related to the performance of an operation (_practical knowledge_)
+
+    - **Heuristic:** An experience-based information or a "rule of thumb" used to make quick, educated guesses when finding the perfect solution is impossible or too time-consuming.
 
 | Comparison     | Belief                                                                                                                    | Hypothesis                                                                                                                                                        | Knowledge                                                                                                                                                 |
 | :------------- | :------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Definition** | **The acceptance that a statement or claim is true**, regardless of whether it can be scientifically proven.              | A **proposed explanation** for a phenomenon that is formulated specifically so it can be tested and potentially falsified through observation or experimentation. | **Justified, verified truth.** In both philosophy and science, knowledge is often defined as justified true belief.                                       |
 | **Basis**      | Faith, personal experience, intuition, or cultural conditioning. It does not require objective evidence to be maintained. | Initial observations and existing information. It serves as a starting point for scientific investigation.                                                        | Empirical evidence, logical proof, and objective facts. It is built when a hypothesis survives rigorous testing and becomes universally accepted as fact. |
 | **Certainty**  | Subjectively high, but objectively unverified.                                                                            | Low to medium; it is simply a tentative assumption used to gather data.                                                                                           | High. While always open to revision with new data, it is treated as an objective fact.                                                                    |
-| **Example**    | _I believe it will rain tomorrow because my joints ache" or "I believe in life after death._                              | _If I water this plant with coffee, it will grow faster than a plant watered with tap water._                                                                     | _I know the Earth orbits the Sun._                                                                                                                        |
+| **Example**    | _I believe it will rain tomorrow because my joints ache._                                                                 | _If I water this plant with coffee, it will grow faster than a plant watered with tap water._                                                                     | _I know the Earth orbits the Sun._                                                                                                                        |
 
 ---
 
@@ -379,5 +388,69 @@ In terms of AI, Agent is a software system that **perceives** its environment, p
 [**↪ Perception**](#perception)
 
 <p align="center"><img src="img07.png"/><br><i><u>figure 2.2.: Working of an AI agent.</u></i></p>
+
+<ins><b>Four signs of a good AI agent:</b></ins>
+
+1. Has the ability to **perceive** the environment.
+2. Takes **decision** by perception.
+3. Decisions translate to **actions**.
+4. Provides rational and right **outcomes**.
+
+---
+
+### 2.3. The PEAS Framework
+
+The **PEAS framework** is a foundational model in Artificial Intelligence used to specify the task environment of an intelligent agent.
+
+[**↪ Simplified example**](https://shadowshahriar.dev/cse322/notes/practice-01.pdf)
+
+<ins><b>P - Performance Measure:</b></ins> The criteria or metric used to evaluate how successfully the AI agent achieves its goals.
+
+<ins><b>E - Environment:</b></ins> The external surroundings or domain in which the agent operates. This defines what the agent can observe and interact with.
+
+<ins><b>A - Actuators:</b></ins> The physical mechanisms or software commands the AI uses to take action and manipulate its environment.
+
+<ins><b>S - Sensors:</b></ins> The tools or devices that allow the AI to perceive and collect data from its environment.
+
+---
+
+### 2.4. Task Environment
+
+Environments are classified into several primary dimensions based on their structure and rules:
+
+1. **Observability**
+    - <ins><b>Fully Observable:</b></ins> The AI agent can access the complete, accurate state of the environment at any given time (_e.g., a chessboard_).
+
+    - <ins><b>Partially Observable:</b></ins> The agent has limited sensors or missing information, leaving some aspects of the environment hidden (_e.g., a self-driving car in fog_)
+
+2. **Predictability**
+    - <ins><b>Deterministic:</b></ins> The current state of the environment and the action taken by the agent determine the exact next state with 100% certainty (_e.g., a math problem or tic-tac-toe_).
+
+    - <ins><b>Stochastic / Non-Deterministic:</b></ins> Random events or outside factors influence the outcomes, meaning the same action might yield different results (_e.g., the stock market or weather forecasting_)
+
+3. **Time and Change**
+    - <ins><b>Static:</b></ins> The environment remains perfectly unchanged while the AI agent is thinking or planning (_e.g., solving a logic puzzle_).
+
+    - <ins><b>Dynamic:</b></ins> The environment continues to change, evolve, or move while the agent is deliberating or performing actions (_e.g., a live multiplayer battle arena or an active trading market_)
+
+4. **State Representation**
+    - <ins><b>Discrete:</b></ins> There are a finite, countable number of distinct states, percepts, and actions (_e.g., checkers or a grid world_).
+
+    - <ins><b>Continuous:</b></ins> States and actions are infinite and vary smoothly, requiring complex approximations (_e.g., autonomous driving steering angles or robotic arm movement_).
+
+5. **Action Dependency**
+    - <ins><b>Episodic:</b></ins> The agent's decision in one "episode" or task does not impact or depend on its decision in the next (_e.g., a defect-checking robot sorting items on a conveyor belt_).
+
+    - <ins><b>Sequential:</b></ins> Current actions directly affect future states, requiring long-term planning and strategy (_e.g., chess, Go, or a Rubik's cube_)
+
+6. **Number of Actors**
+    - <ins><b>Single-agent:</b></ins> Only one AI agent interacts with the environment (_e.g., solving a maze_).
+
+    - <ins><b>Multi-agent:</b></ins> Multiple agents operate within the same space. These agents can be,
+        - **Collaborative** (working together) or
+
+        - **Competitive** (competing for a shared goal, like in football or multiplayer video games)
+
+---
 
 ## CT Questions
