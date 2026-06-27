@@ -3,10 +3,10 @@
 ## Topic List
 
 1. **Lecture 1**
-    - Artificial Intelligence
-    - Significance of Studying AI
-    - Applications of AI
-    - Branches of AI
+    - Artificial Intelligence ✔️
+    - Significance of Studying AI ✔️
+    - Applications of AI ✔️
+    - Relevant Fields of AI ✔️
     - Goals of AI
     - Turing Test
     - Building an Intelligent Agent
@@ -73,6 +73,8 @@ Studying AI offers several practical and long-term benefits:
 
 4. <ins><b>Drive Ethical Innovation:</b></ins> As AI slowly becomes pervasive, there is a critical need for professionals who understand how to develop and manage these technologies responsibly, addressing issues of privacy, bias, and fairness.
 
+---
+
 ### 1.2. How AI works?
 
 The progression from raw facts to actionable insight is typically explained using the **DIKW model** (Data, Information, Knowledge, Wisdom).
@@ -92,6 +94,8 @@ The progression from raw facts to actionable insight is typically explained usin
     > "98.6°F is a normal human temperature; anything above 100°F indicates a fever and usually correlates with an infection."
 
 4. <ins><b>Wisdom:</b></ins> **True wisdom requires foresight, ethics, and human conscience.** The AI provides the **Knowledge**, but the human applies the **Wisdom** to make the final ethical, strategic, or long-term decision.
+
+---
 
 ### 1.3. Applications of AI
 
@@ -133,6 +137,8 @@ The progression from raw facts to actionable insight is typically explained usin
 
     > **Example:** Roomba.
 
+---
+
 ### 1.4. Expert Systems of AI
 
 An Expert System is a branch of Artificial Intelligence designed to simulate the decision-making ability of a human expert.
@@ -162,5 +168,53 @@ Unlike many modern AI "black boxes," expert systems are highly interpretable. Th
 3. <ins><b>Backward Chaining:</b></ins> Starts with a specific goal and works backward to find evidence that supports it.
 
     > "Verifying if a user has diabetes by looking for supporting symptoms."
+
+---
+
+### 1.5. Sensors vs Actuators
+
+| Sensors                                                                                                  | Actuators                                                                                                                     |
+| :------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------- |
+| The Inputs                                                                                               | The Outputs                                                                                                                   |
+| Sensors detect physical or chemical changes in the environment and convert them into electrical signals. | Actuators receive these processed signals and convert them back into physical actions, such as movement, heat, or fluid flow. |
+| Sensors are placed at the input port of a system to monitor and measure properties.                      | Actuators are placed at the output port to manipulate continuous or discrete process parameters.                              |
+
+---
+
+### 1.6. Relevant Fields of AI
+
+1. <ins><b>Machine Learning and Pattern Recognition</b></ins>
+    - Design and develop software that learn from data.
+    - The learning models make prediction of unknown data.
+    - Limited to dataset (`small dataset = less learning`)
+
+    <p align="center"><img src="img03.png"/><br><i><u>figure 1.6.: ML model creation.</u></i></p>
+
+2. <ins><b>Logic-based AI</b></ins>
+    - A set of statements in logical form (mathematical logic) that express facts and rules about a particular problem domain.
+    - **Domain:** Pattern Matching, Language Parsing, Semantic Analysis.
+
+3. <ins><b>Searching</b></ins>
+    - A large number of possibilities are given, pick the most optimal one.
+    - **Domain:** Chess, Networking, Resource Allocation, Scheduling.
+
+4. <ins><b>Knowledge Representation</b></ins>
+    - Facts represented as mathematical possibilities, tables, and organized datasets.
+    - **Domain:** Summarize content (Gemini)
+
+5. <ins><b>Planning</b></ins>
+    - Optimal planning gives maximum returns with minimum costs.
+    - Starts with a goal statement in a particular situation.
+    - Generates the most optimal plan to achieve the goal.
+
+6. <ins><b>Heuristics</b></ins>
+    - Heuristics are rules-of-thumb, educated guesses, or "smart shortcuts" used to solve complex problems more efficiently.
+    - Instead of calculating every possible solution—which can take an impractical amount of time or computing power-heuristics guide an AI to quickly find a _"good enough"_ answer. **Domain:** Chess, 8-Puzzle.
+    - For complex problems, testing every option (called a _"brute-force"_ or exhaustive search) is often impossible. Heuristics allow AI to bypass improbable or inefficient paths and focus only on the most promising ones. **Domain:** Indexing, Search Engine.
+
+7. <ins><b>Genetic Programming (GP)</b></ins>
+    - Genetic Programming is a subfield of artificial intelligence where computers automatically write and evolve executable code by mimicking biological evolution.
+
+---
 
 ## CT Questions
