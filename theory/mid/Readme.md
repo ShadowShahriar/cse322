@@ -13,8 +13,8 @@
         - [**Thinking Rationally**](#17d-thinking-rationally) ✅
     - [**Turing Test**](#18-turing-test) ✅
     - Building an Intelligent Agent
-    - Strong AI vs Weak AI
-    - Alan Turing
+    - [**Strong AI vs Weak AI**](#110-strong-ai-vs-weak-ai) ✅
+    - [**Alan Turing**](#111-alan-turing) ✅
 
 2. **Lecture 2**
     - Knowledge and Data
@@ -190,7 +190,7 @@ Unlike many modern AI "black boxes," expert systems are highly interpretable. Th
     - The learning models make prediction of unknown data.
     - Limited to dataset (`small dataset = less learning`)
 
-    <p align="center"><img src="img03.png"/><br><i><u>figure 1.6.: ML model creation.</u></i></p>
+<p align="center"><img src="img03.png"/><br><i><u>figure 1.6.: ML model creation.</u></i></p>
 
 2. <ins><b>Logic-based AI</b></ins>
     - A set of statements in logical form (mathematical logic) that express facts and rules about a particular problem domain.
@@ -268,7 +268,7 @@ While human thinking involves biases and emotions, rational AI relies on mathema
 
 ### 1.8. Turing Test
 
-Turing Test evaluates an AI's ability to exhibit human-like intelligence. In a text-only conversation, a human judge interacts with both a human and an AI. If the judge cannot reliably tell which participant is the machine, the AI is considered to have passed the test.
+Turing Test evaluates an AI's ability to exhibit human-like intelligence. In a text-only conversation, a human judge interacts with both a human and an AI. If the judge cannot reliably tell which participant is the machine, the AI is considered to have passed the test. First Turing Test was performed in **1950**.
 
 Example of a Turing Test:
 
@@ -281,11 +281,41 @@ Example of a Turing Test:
 | Player&nbsp;A&nbsp;(**AI**)    | It was definitely a learning experience. I always double-check the labels on my baking ingredients now.                                                                                                      |
 | Player&nbsp;B&nbsp;(**Human**) | Honestly, I was so embarrassed at the time, but now it's just a funny story we laugh about. We actually still order pizza from that same place every year.                                                   |
 
+<p align="center"><img src="img04.png"/><br><i><u>figure 1.8.: Turing test.</u></i></p>
+
 The judge relies on nuanced behavioral indicators to determine which participant is the machine:
 
 - **Over-perfection:** AIs sometimes answer questions too logically or smoothly, while humans often use filler words (e.g., "uh," "well") or express more complex emotional vulnerability.
 - **Quirks and Humor:** A human is more likely to make random typos, relate to shared cultural experiences, or bring up irrelevant but realistic details.
 - **The "Trick" Question:** Judges often use riddles or questions that require abstract thinking.
+
+---
+
+### 1.9. Building an Intelligent Agent
+
+---
+
+### 1.10. Strong AI vs Weak AI
+
+| Metric            | Weak AI                                                   | Strong AI (AGI)                                                 |
+| :---------------- | :-------------------------------------------------------- | :-------------------------------------------------------------- |
+| **Status**        | Exists today and is widely used.                          | Purely theoretical, under research.                             |
+| **Scope**         | Narrow and task-specific.                                 | Broad and universal (like a human mind)                         |
+| **Consciousness** | **Unconscious**; mimics thinking but does not understand. | **Conscious**; has self-awareness and actual understanding.     |
+| **Learning**      | Requires massive amounts of pre-fed training data.        | Learns and adapts on its own from experience.                   |
+| **Autonomy**      | Cannot act autonomously outside its programmed rules.     | Fully autonomous with independent decision-making capabilities. |
+
+---
+
+### 1.11. Alan Turing
+
+> Alan Turing defined intelligent behavior as "the ability to achieve human-level intelligence" during a conversation. The performance should trick an interrogator into thinking that the answers are coming from a human.
+
+- Alan Turing (**1912-1954**) is often considered the father of modern computer science.
+
+- Turing created **Turing Machine** that had an influential formalization of the concept of algorithms and computation. He proposed the **Turing Test**.
+
+- Turing predicted by **the year 2000**, a machine might have a **30% chance** of fooling a lay person for **5 minutes**.
 
 ---
 
