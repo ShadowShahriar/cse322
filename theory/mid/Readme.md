@@ -17,8 +17,10 @@
     - [**Alan Turing**](#111-alan-turing) ✅
 
 2. **Lecture 2**
-    - Knowledge and Data
-    - Intelligent Agent
+    - [**Knowledge and Data**](#21-knowledge-and-data) ✅
+    - [**Inference**](#inference) ✅
+    - [**Agent**](#22-agent) ✅
+        - Intelligent Agent
     - Task Environment
     - Types of Agent
     - Learning
@@ -56,6 +58,29 @@ Artificial intelligence (**AI**) is a branch of computer science focused on buil
 - AI is a science of **finding theories** and **methodologies**.
 - AI helps machines **understand the world** and **react to situations** accordingly.
 - AI is closely related to the study of human brain. By mimicking the way the human brain learns, thinks, and takes action, we can build a machine that can do the same.
+
+---
+
+### Inference
+
+Inference is the operational phase of artificial intelligence where a trained model processes new, unseen input data to make predictions, generate outputs, or make decisions.
+
+- Learn from known data.
+- Identify unknown data.
+
+---
+
+### Agent Function
+
+An agent function is a theoretical mathematical mapping that dictates exactly how an autonomous system should respond based on the history of everything it has perceived.
+
+---
+
+### Perception
+
+Perception in Agentic AI is the foundational process by which an autonomous system continuously gathers, interprets, and prioritizes data from its environment.
+
+---
 
 ## Theoretical Questions
 
@@ -260,7 +285,7 @@ Systems that make decisions based on logical reasoning and formal inference, aim
 
 While human thinking involves biases and emotions, rational AI relies on mathematics and rules to achieve flawless logical consistency.
 
-- **The Goal:** Formalize the reasoning process as a system of logical rules and procedures for inference.
+- **The Goal:** Formalize the reasoning process as a system of logical rules and procedures for [**inference**](#inference).
 
 - **The Issue:** Not all problems can be solved just by reasoning and inferences.
 
@@ -328,5 +353,31 @@ A general working diagram of an intelligent agent:
 - Turing predicted by **the year 2000**, a machine might have a **30% chance** of fooling a lay person for **5 minutes**.
 
 ---
+
+### 2.1. Knowledge and Data
+
+> Data serves as the **building blocks**, while knowledge is the ability to use those blocks to **make decisions**.
+
+1. <ins><b>Data:</b></ins> Raw, uninterpreted, and disconnected facts.
+
+2. <ins><b>Knowledge:</b></ins> The understanding, application, and contextual synthesis of unorganized, row facts (_data_).
+
+| Comparison     | Belief                                                                                                                    | Hypothesis                                                                                                                                                        | Knowledge                                                                                                                                                 |
+| :------------- | :------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Definition** | **The acceptance that a statement or claim is true**, regardless of whether it can be scientifically proven.              | A **proposed explanation** for a phenomenon that is formulated specifically so it can be tested and potentially falsified through observation or experimentation. | **Justified, verified truth.** In both philosophy and science, knowledge is often defined as justified true belief.                                       |
+| **Basis**      | Faith, personal experience, intuition, or cultural conditioning. It does not require objective evidence to be maintained. | Initial observations and existing information. It serves as a starting point for scientific investigation.                                                        | Empirical evidence, logical proof, and objective facts. It is built when a hypothesis survives rigorous testing and becomes universally accepted as fact. |
+| **Certainty**  | Subjectively high, but objectively unverified.                                                                            | Low to medium; it is simply a tentative assumption used to gather data.                                                                                           | High. While always open to revision with new data, it is treated as an objective fact.                                                                    |
+| **Example**    | _I believe it will rain tomorrow because my joints ache" or "I believe in life after death._                              | _If I water this plant with coffee, it will grow faster than a plant watered with tap water._                                                                     | _I know the Earth orbits the Sun._                                                                                                                        |
+
+---
+
+### 2.2. Agent
+
+In terms of AI, Agent is a software system that **perceives** its environment, processes information, and **takes actions** using actuators and effectors to **achieve specific goals**.
+
+[**↪ Agent Function**](#agent-function)<br>
+[**↪ Perception**](#perception)
+
+<p align="center"><img src="img07.png"/><br><i><u>figure 2.2.: Working of an AI agent.</u></i></p>
 
 ## CT Questions
