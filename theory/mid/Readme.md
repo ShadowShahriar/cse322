@@ -77,34 +77,7 @@ Studying AI offers several practical and long-term benefits:
 
 The progression from raw facts to actionable insight is typically explained using the **DIKW model** (Data, Information, Knowledge, Wisdom).
 
-```
- ┌──────────────┐
- │ Intelligence │
- └──────▲───────┘
-        │
-        │   Inference
-┌───────┴───────┐
-│ Understanding │
-└───────▲───────┘
-        │
-        │  Pattern Extraction
-  ┌─────┴─────┐
-  │ Knowledge │
-  └─────▲─────┘
-        │
-        │
-        │  Cognition
- ┌──────┴──────┐
- │ Information │
- └──────▲──────┘
-        │
-        │  Processing
-    ┌───┴──┐
-    │ Data │
-    └──────┘
-```
-
-<p align="center"><i><u>figure 1.2.: DIKW model.</u></i></p>
+<p align="center"><img src="img01.png"/><br><i><u>figure 1.2.: DIKW model.</u></i></p>
 
 1. <ins><b>Data:</b></ins> Unprocessed, unorganized facts.
 
