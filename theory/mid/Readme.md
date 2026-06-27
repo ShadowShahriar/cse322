@@ -68,6 +68,8 @@ Inference is the operational phase of artificial intelligence where a trained mo
 - Learn from known data.
 - Identify unknown data.
 
+[**↪ Thinking Rationally**](#17d-thinking-rationally)
+
 ---
 
 ### Agent Function
@@ -289,7 +291,7 @@ Systems that make decisions based on logical reasoning and formal inference, aim
 
 While human thinking involves biases and emotions, rational AI relies on mathematics and rules to achieve flawless logical consistency.
 
-- **The Goal:** Formalize the reasoning process as a system of logical rules and procedures for [**inference**](#inference).
+- **The Goal:** Formalize the reasoning process as a system of logical rules and procedures for [**↪ inference**](#inference).
 
 - **The Issue:** Not all problems can be solved just by reasoning and inferences.
 
