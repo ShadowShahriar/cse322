@@ -35,7 +35,7 @@ Course offered by,
     - [Topic List](https://shadowshahriar.github.io/cse322/theory/mid/#topic-list)
     - [Definitions](https://shadowshahriar.github.io/cse322/theory/mid/#definitions)
     - [Theoretical Questions](https://shadowshahriar.github.io/cse322/theory/mid/#theoretical-questions)
-    - [CT Questions](https://shadowshahriar.github.io/cse322/theory/mid/#ct-questions)
+    - [CT Questions](https://shadowshahriar.github.io/cse322/theory/mid/#ct-archive)
 
 <!--
 

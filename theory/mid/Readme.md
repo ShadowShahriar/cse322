@@ -48,6 +48,12 @@
         - Simple Hill Climbing
         - A\* Algorithm
 
+## CT Archive
+
+[**↪ Section 1**](https://shadowshahriar.github.io/cse322/theory/mid/ct-s1/)<br>
+[**↪ Section 2**](https://shadowshahriar.github.io/cse322/theory/mid/ct-s2/)<br>
+[**↪ Section 3**](https://shadowshahriar.github.io/cse322/theory/mid/ct-s3/)
+
 ## Definitions
 
 ### Artificial Intelligence
@@ -454,5 +460,3 @@ Environments are classified into several primary dimensions based on their struc
         - **Competitive** (competing for a shared goal, like in football or multiplayer video games)
 
 ---
-
-## CT Questions
