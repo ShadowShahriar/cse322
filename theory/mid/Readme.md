@@ -56,7 +56,7 @@
 
 ## CT Archive
 
-**↪ Section 1**<br>
+[**↪ Section 1**](https://shadowshahriar.github.io/cse322/theory/mid/ct-s1/)<br>
 [**↪ Section 2_A**](https://shadowshahriar.github.io/cse322/theory/mid/ct-s2a/)<br>
 [**↪ Section 2_B**](https://shadowshahriar.github.io/cse322/theory/mid/ct-s2b/)<br>
 [**↪ Section 3**](https://shadowshahriar.github.io/cse322/theory/mid/ct-s3/)
