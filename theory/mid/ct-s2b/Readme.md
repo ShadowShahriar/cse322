@@ -169,3 +169,7 @@ There is **no Plateau** because the heuristic value increases along the chosen p
 ---
 
 ### 2. Heuristic Math
+
+---
+
+[**↪ CT Archive**](https://shadowshahriar.github.io/cse322/theory/mid/#ct-archive)
