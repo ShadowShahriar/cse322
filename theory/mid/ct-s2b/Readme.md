@@ -4,14 +4,14 @@
 
 ### 1. Heuristic Math
 
-A spelling correction system uses Hill Climbing search to transform a scrambled word into a meaningful word.
+A spelling correction system uses **Hill Climbing** search to transform a scrambled word into a meaningful word.
 
 ```
 Initial state: LPAET
 Goal state:    PETAL
 ```
 
-At each step, we can generate neighboring states by swapping any two letters. Apply Hill Climbing (steepest-ascent) step by step to reach the goal. Identify whether the algorithm faces Local maxima, Plateau, or reach the goal successfully.
+At each step, we can generate neighboring states by swapping any two letters. Apply Hill Climbing (**steepest-ascent**) step by step to reach the goal. Identify whether the algorithm faces Local maxima, Plateau, or reach the goal successfully.
 
 <ins><b>Ans.:</b></ins> We began solving it by defining a heuristic:
 
@@ -44,18 +44,18 @@ We generate neighbors by swapping any two letters:
 
 From initial state **LPAET**:
 
-| Swap  | New State | h                           |
-| ----- | --------- | --------------------------- |
-| L ↔ P | PLAET     | 1 (P correct)               |
-| L ↔ A | APLET     | 0                           |
-| L ↔ E | EPALT     | 1 (E correct at position 2) |
-| L ↔ T | TPAEL     | 0                           |
-| P ↔ A | LAPET     | 0                           |
-| P ↔ E | LEAPT     | 0                           |
-| P ↔ T | LTAEP     | 0                           |
-| A ↔ E | LPEAT     | 0                           |
-| A ↔ T | LPTEA     | 1 (T correct at position 3) |
-| E ↔ T | LPATE     | 0                           |
+| Swap            | New State | h                           |
+| --------------- | --------- | --------------------------- |
+| L&nbsp;↔&nbsp;P | PLAET     | 1 (P correct)               |
+| L&nbsp;↔&nbsp;A | APLET     | 0                           |
+| L&nbsp;↔&nbsp;E | EPALT     | 1 (E correct at position 2) |
+| L&nbsp;↔&nbsp;T | TPAEL     | 0                           |
+| P&nbsp;↔&nbsp;A | LAPET     | 0                           |
+| P&nbsp;↔&nbsp;E | LEAPT     | 0                           |
+| P&nbsp;↔&nbsp;T | LTAEP     | 0                           |
+| A&nbsp;↔&nbsp;E | LPEAT     | 0                           |
+| A&nbsp;↔&nbsp;T | LPTEA     | 1 (T correct at position 3) |
+| E&nbsp;↔&nbsp;T | LPATE     | 0                           |
 
 ```
 Best heuristic value = 1
@@ -88,13 +88,13 @@ h(PLAET) = 1
 
 From the state **PLAET**:
 
-| Swap  | State | h                       |
-| ----- | ----- | ----------------------- |
-| L ↔ E | PEALT | 2 (P and E are correct) |
-| L ↔ T | PTAEL | 2                       |
-| A ↔ T | PLTEA | 2                       |
-| E ↔ T | PLATE | 2                       |
-| ...   | ≤1    |                         |
+| Swap            | State | h                       |
+| --------------- | ----- | ----------------------- |
+| L&nbsp;↔&nbsp;E | PEALT | 2 (P and E are correct) |
+| L&nbsp;↔&nbsp;T | PTAEL | 2                       |
+| A&nbsp;↔&nbsp;T | PLTEA | 2                       |
+| E&nbsp;↔&nbsp;T | PLATE | 2                       |
+| ...             | ≤1    |                         |
 
 ```
 Best heuristic value = 2
