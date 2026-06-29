@@ -22,9 +22,15 @@
     - [**Agent**](#22-agent) ✅
     - [**The PEAS Framework**](#23-the-peas-framework) ✅
     - [**Task Environment**](#24-task-environment) ✅
-    - Types of Agent
-    - Learning
-    - Classification (_Partial_)
+    - [**Types of Agent**](#25-types-of-agent) ✅
+        - [**Simple Reflex Agent**](#25a-simple-reflex-agent) ✅
+        - [**Model-Based**](#25b-model-based-reflex-agent) ✅
+        - [**Goal-Based**](#25c-goal-based-agent) ✅
+        - [**Utility-Based**](#25d-utility-based-agent) ✅
+        - [**Do they use Heuristics?**](#25e-do-they-use-heuristics) ✅
+    - [**Learning**](#26-learning) ✅
+        - [**Supervised Learning**](#26a-supervised-learning) ✅
+        - [**Unsupervised Learning**](#26b-supervised-learning) ✅
 
 3. **Lecture 3**
     - Problem Types
@@ -461,3 +467,191 @@ Environments are classified into several primary dimensions based on their struc
         - **Competitive** (competing for a shared goal, like in football or multiplayer video games)
 
 ---
+
+### 2.5. Types of Agent
+
+Four types of AI agents:
+
+1. Simple Reflex Agent
+2. Model-based Agent
+3. Goal-based Agent
+4. Utility-based Agent
+
+Feature comparison of these four types of AI agent:
+
+| Agent&nbsp;Type        | Working&nbsp;Principle                                           | Key&nbsp;Features                                    | Advantages                                           | Limitations                                                              |
+| ---------------------- | ---------------------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------ |
+| **Simple&nbsp;Reflex** | Acts only on the _current percept_.                              | Uses condition-action rules (_"if-then" rules_)      | Fast, simple, efficient in predictable environments. | Cannot learn, remember, or handle partially observable environments.     |
+| **Model-Based**        | Maintains an internal _model of the environment_.                | Keeps _track of past states_ and hidden information. | Works in partially observable environments.          | Requires accurate internal models; limited planning ability.             |
+| **Goal-Based**         | Chooses actions that help achieve _specific goals_.              | Uses _search_ and _planning_ mechanisms.             | More flexible and intelligent decision-making.       | Computationally expensive; may struggle with complex goals.              |
+| **Utility-Based**      | Selects actions that _maximize a utility_ (preference) function. | Evaluates and compares _multiple outcomes_.          | Handles uncertainty and trade-offs effectively.      | Designing utility functions can be difficult; computation may be costly. |
+
+---
+
+### 2.5A. Simple Reflex Agent
+
+<ins><b>Working Principle</b></ins>
+
+> Responds directly to the current percept using predefined rules.
+
+<ins><b>Rule format</b></ins>
+
+```
+If condition → perform action
+```
+
+<p align="center"><img src="img08.png"/><br><i><u>figure 2.5A.: Simple Reflex Agent.</u></i></p>
+
+<ins><b>Example</b></ins>
+
+A thermostat:
+
+- If temperature < set point → turn heater on
+- If temperature ≥ set point → turn heater off
+
+<ins><b>Features</b></ins>
+
+- No memory of past events.
+- Uses condition-action rules.
+- Suitable for fully observable environments.
+
+<ins><b>Limitations</b></ins>
+
+- Cannot adapt to new situations.
+- Fails when current information is insufficient.
+- No learning or planning capability.
+
+---
+
+### 2.5B. Model-Based Reflex Agent
+
+<ins><b>Working Principle</b></ins>
+
+> Maintains an **internal model** of the environment. It combines current percepts with stored information about previous states.
+
+<p align="center"><img src="img09.png"/><br><i><u>figure 2.5B.: Model-Based Reflex Agent.</u></i></p>
+
+<ins><b>Example</b></ins>
+
+A robotic vacuum cleaner:
+
+- Remembers areas already cleaned.
+- Keeps track of obstacles and room layout.
+
+<ins><b>Features</b></ins>
+
+- Has memory of past observations.
+- Handles partially observable environments.
+- Updates an internal representation of the world.
+
+<ins><b>Limitations</b></ins>
+
+- Requires a correct model of the environment.
+- More complex than simple reflex agents.
+- Still focused on rules rather than long-term planning.
+
+---
+
+### 2.5C. Goal-Based Agent
+
+<ins><b>Working Principle</b></ins>
+
+> Considers future consequences and chooses actions that help achieve a specified goal.
+
+<p align="center"><img src="img10.png"/><br><i><u>figure 2.5C.: Goal-Based Agent.</u></i></p>
+
+<ins><b>Example</b></ins>
+
+A GPS navigation system:
+
+- **Goal:** Reach destination.
+- Evaluates possible routes and selects one that achieves the goal.
+
+<ins><b>Features</b></ins>
+
+- Uses search and planning algorithms.
+- Evaluates alternative action sequences.
+- Flexible in changing environments.
+
+<ins><b>Limitations</b></ins>
+
+- Planning can be computationally intensive.
+- Needs clearly defined goals.
+- May not distinguish between multiple goal-achieving options.
+
+---
+
+### 2.5D. Utility-Based Agent
+
+<ins><b>Working Principle</b></ins>
+
+> Evaluates the desirability of different outcomes using a **utility function** and chooses the action with the highest expected utility.
+
+<p align="center"><img src="img11.png"/><br><i><u>figure 2.5D. Utility-Based Agent.</u></i></p>
+
+<ins><b>Example</b></ins>
+
+A self-driving car:
+
+- Considers safety, travel time, fuel efficiency, and passenger comfort.
+- Chooses the action that provides the best overall outcome.
+
+<ins><b>Features</b></ins>
+
+- Handles uncertainty and risk.
+- Supports trade-offs among competing objectives.
+- Can rank multiple acceptable solutions.
+
+<ins><b>Limitations</b></ins>
+
+- Utility functions can be difficult to design.
+- Requires more computation than simpler agents.
+- Utility values may not perfectly capture real-world preferences.
+
+---
+
+### 2.5E. Do they use Heuristics?
+
+Heuristics are most commonly associated with **Goal-Based** and **Utility-Based agents**.
+
+| Agent&nbsp;Type        | Uses&nbsp;Heuristics? | Why                                                                                                                        |
+| ---------------------- | --------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| **Simple&nbsp;Reflex** | ⛔ No                 | Acts using predefined condition-action rules. No search or planning is involved, so heuristics are generally unnecessary.  |
+| **Model-Based**        | ⛔ No                 | Uses an internal model and rules to determine actions. It maintains state but typically does not perform heuristic search. |
+| **Goal-Based**         | ✅ Often&nbsp;Yes     | Frequently uses heuristics to guide search and planning toward goal states (e.g., A\* search, best-first search).          |
+| **Utility-Based**      | ✅ Maybe              | May use heuristics to estimate future utilities or reduce the cost of evaluating many alternatives.                        |
+
+---
+
+### 2.6. Learning
+
+Supervised and unsupervised learning are the two primary methods of training AI models. The core difference is the data they use:
+
+- Supervised learning trains on labeled data (**where the answer is known**) to predict outcomes,
+- Unsupervised learning explores raw, unlabeled data to discover hidden patterns or groupings independently.
+
+| Supervised&nbsp;Learning                                                       | Unsupervised&nbsp;Learning                                               |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
+| Input data is **labelled**.                                                    | Input data is **unlabelled**.                                            |
+| Uses **training dataset**.                                                     | Uses just **input dataset**.                                             |
+| Data is classified based on training dataset.                                  | Uses properties of given data and classifies it.                         |
+| Used for **prediction**.                                                       | Used for **analysis**.                                                   |
+| Divided into two types:<br>• Regression<br>• Classification                    | Divided into two types:<br>• Clustering<br>• Association                 |
+| Known number of classes.                                                       | Unknown number of classes.                                               |
+| It is generally easier to measure and evaluate with clear performance metrics. | The results are sometimes exploratory and harder to measure objectively. |
+
+### 2.6A. Supervised Learning
+
+<p align="center"><img src="img12.png"/><br><i><u>figure 2.6A. Supervised Learning.</u></i></p>
+
+- You provide the AI with input data and the corresponding correct outputs (labels).
+- It learns the relationship between the two and continually adjusts until it can accurately predict outputs for new, unseen data.
+- **Best used when:** You have a clear historical record of answers and want to automate predictions or classifications.
+
+### 2.6B. Unsupervised Learning
+
+<p align="center"><img src="img13.png"/><br><i><u>figure 2.6B. Unsupervised Learning.</u></i></p>
+
+- You give the AI raw, unstructured data without predefined answers.
+- The model must work on its own to find naturally occurring structures, relationships, or anomalies.
+- **Best used when:** You have vast amounts of raw data, lack human-labeled examples, and need to discover underlying insights or trends.
