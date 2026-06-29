@@ -1,6 +1,6 @@
 ## Section 2B
 
-<p align="center"><img src="1.jpg"/><br><img src="2.jpg"/></p>
+<p align="center"><img src="1.jpg"/></p>
 
 ### 1. Heuristic Math
 
@@ -169,6 +169,8 @@ There is **no Plateau** because the heuristic value increases along the chosen p
 ---
 
 ### 2. Heuristic Math
+
+<p align="center"><img src="2.jpg"/></p>
 
 ---
 
