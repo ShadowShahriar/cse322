@@ -33,17 +33,19 @@
         - [**Unsupervised Learning**](#26b-supervised-learning) ✅
 
 3. **Lecture 3**
-    - Problem Types
-    - State Space
-    - 8 Puzzle Game
-    - Searching
-        - Tree Searching
-        - Searching Strategies
-        - Evaluating Search Methods
+    - [**Problem Types**](#31-problem-types) ✅
+    - [**Problem Solving Steps**](#32-problem-solving-steps) ✅
+    - [**Problem Formulation**](#33-problem-formulation) ✅
+    - [**The State Space**](#34-the-state-space) ✅
+    - [**8 Puzzle Game**](#35-8-puzzle-game) ✅
+    - **Searching**
+        - [**Tree Searching**](#36-tree-searching) ✅
+        - [**Searching Strategies**](#37-searching-strategies) ✅
+        - [**Evaluating Search Methods**](#38-evaluating-search-methods) ✅
     - Uninformed Searching Methods
         - Breadth-First Search (BFS)
         - Depth-First Search (DFS)
-        - BFS vs DFS
+        - [**BFS vs DFS**](#39-bfs-vs-dfs) ✅
         - Depth Limited Search (DLS)
         - Iterative Deepening Search (IDS)
         - Uniform-Cost Search (UCS)
@@ -57,8 +59,8 @@
 ## CT Archive
 
 [**↪ Section 1**](https://shadowshahriar.github.io/cse322/theory/mid/ct-s1/)<br>
-[**↪ Section 2_A**](https://shadowshahriar.github.io/cse322/theory/mid/ct-s2a/)<br>
-[**↪ Section 2_B**](https://shadowshahriar.github.io/cse322/theory/mid/ct-s2b/)<br>
+[**↪ Section 2 (CT 1)**](https://shadowshahriar.github.io/cse322/theory/mid/ct-s2a/)<br>
+[**↪ Section 2 (CT 2)**](https://shadowshahriar.github.io/cse322/theory/mid/ct-s2b/)<br>
 [**↪ Section 3**](https://shadowshahriar.github.io/cse322/theory/mid/ct-s3/)
 
 ## Definitions
@@ -667,3 +669,162 @@ Supervised and unsupervised learning are the two primary methods of training AI 
 - You give the AI raw, unstructured data without predefined answers.
 - The model must work on its own to find naturally occurring structures, relationships, or anomalies.
 - **Best used when:** You have vast amounts of raw data, lack human-labeled examples, and need to discover underlying insights or trends.
+
+---
+
+### 3.1. Problem Types
+
+| Problem Type                  | Environment Type                          |
+| :---------------------------- | :---------------------------------------- |
+| Single State<br>&nbsp;        | Deterministic<br>Fully observable         |
+| Multiple State<br>&nbsp;      | Non-observable<br>&nbsp;                  |
+| Contingency Problem<br>&nbsp; | Non-deterministic<br>Partially observable |
+| Exploration Problem<br>&nbsp; | Unknown state space<br>&nbsp;             |
+
+---
+
+### 3.2. Problem Solving Steps
+
+1. **Goal Formation:** Define the problem precisely.
+2. **Formulation:** Analyze the problem.
+3. **Search:** Isolate and represent the task knowledge that is necessary to solve the problem.
+4. **Solution:** Choose the best solving problem-solving technique.
+
+> A solution is a sequence of actions leading from the initial state to a goal state.
+
+---
+
+### 3.3. Problem Formulation
+
+1. <ins><b>Initial State:</b></ins> The state the agent starts in.
+
+2. <ins><b>Actions:</b></ins> Description of possible actions available to the agent.
+
+3. <ins><b>Transition Model:</b></ins> Description of what each action does specified by function.
+
+    > `result(s, a)` that returns the state from doing action `a` in the state `s`.
+
+4. <ins><b>Goal Test:</b></ins> Determines whether the given state is a goal state.
+
+5. <ins><b>Path Cost:</b></ins> A path in the state space is a sequence of states connected by a specific sequence of actions.
+
+---
+
+### 3.4. The State Space
+
+State space is the conceptual map of all possible configurations or situations a system can be in. It defines every possible stage of a problem- from the starting point to the final solution, allowing AI algorithms to plan moves, navigate, or make decisions.
+
+---
+
+### 3.5. 8 Puzzle Game
+
+o solve the 8-puzzle problem using a heuristic function, we typically apply the A\* Search Algorithm. It evaluates states using a total cost function `f(n) = g(n) + h(n)`, where,
+
+- `g(n)` is the **path cost (depth)** from the initial state, and
+- `h(n)` is the **heuristic value** estimating the cost to reach the goaL.
+
+---
+
+Two common admissible heuristic functions are used for the 8-puzzle:
+
+<ins><b>Misplaced Tiles (h₁):</b></ins> Counts the total number of tiles that are not in their correct goal positions.
+
+<ins><b>Manhattan Distance (h₂):</b></ins> Computes the sum of the absolute vertical and horizontal distances of each tile from its target position.
+
+> **Misplaced Tiles (h₁)** is easier.
+
+---
+
+### 3.6. Tree Searching
+
+**Tree searching** (also known as **tree traversa**l) is the process of navigating through a hierarchical data structure (**a "tree"**) to locate, visit, or update specific nodes.
+
+It involves starting at a main point (**the "root"**) and following pathways to search for data or systematically visit every element.
+
+---
+
+### 3.7. Searching Strategies
+
+<ins><b>Uninformed search:</b></ins> An uninformed search (also known as **blind search** or **brute-force search**) explores a search space without any domain-specific knowledge or "hints" about where the goal is located.
+
+<ins><b>Informed search:</b></ins> An informed search uses a heuristic function `h(n)` to estimate how close a node is to the goal.
+
+<ins><b>Analogy</b></ins>
+
+> Imagine you're searching for a classroom in a school.
+
+- In the uninformed search, you open every door one by one until you find the room.
+- In the informed search, you use signs, floor maps, or room numbers to move toward the correct room.
+
+The second method reaches the goal more efficiently because it uses additional information.
+
+| Feature                  | Uninformed&nbsp;Search                              | Informed&nbsp;Search                                      |
+| ------------------------ | --------------------------------------------------- | --------------------------------------------------------- |
+| **Knowledge about goal** | No extra information                                | Uses heuristic information                                |
+| **Node selection**       | Based only on search tree structure                 | Based on estimated distance/cost to goal                  |
+| **Efficiency**           | Usually explores more nodes                         | Usually explores fewer nodes                              |
+| **Speed**                | Generally slower                                    | Generally faster                                          |
+| **Completeness**         | Depends on algorithm                                | Depends on algorithm and heuristic                        |
+| **Examples**             | BFS, DFS, Uniform Cost Search, Depth-Limited Search | A\*, Greedy Best-First Search, Hill Climbing, Beam Search |
+
+---
+
+### 3.8. Evaluating Search Methods
+
+Search methods are typically evaluated using **four main criteria**:
+
+1. **Completeness**
+    - A search algorithm is **complete** if it is guaranteed to find a solution whenever a solution exists.
+    - If it may fail to find an existing solution, it is **incomplete**.
+
+2. **Optimality**
+    - An algorithm is **optimal** if it always returns the solution with the lowest path cost.
+    - The "best" solution usually means the shortest path or minimum cost.
+
+3. **Time Complexity**
+    - A lower time complexity generally means faster search.
+
+4. **Space Complexity**
+    - Measured by the maximum number of nodes stored in memory.
+
+<ins><b>Shortcut:</b></ins>
+
+| Criterion            | Meaning                        |
+| -------------------- | ------------------------------ |
+| **Completeness**     | Finds a solution if one exists |
+| **Optimality**       | Finds the best solution        |
+| **Time Complexity**  | Amount of computation required |
+| **Space Complexity** | Amount of memory required      |
+
+<ins><b>Comparison Table:</b></ins>
+
+| Algorithm | Complete | Optimal | Time          | Space |
+| --------- | -------- | ------- | ------------- | ----- |
+| BFS       | Yes      | Yes\*   | High          | High  |
+| DFS       | No\*     | No      | Moderate      | Low   |
+| UCS       | Yes      | Yes     | High          | High  |
+| A\*       | Yes\*    | Yes\*   | Usually lower | High  |
+
+---
+
+### 3.9. BFS vs DFS
+
+| Feature          | BFS                              | DFS                                                         |
+| ---------------- | -------------------------------- | ----------------------------------------------------------- |
+| Full Name        | Breadth-First Search             | Depth-First Search                                          |
+| Strategy         | Explores level by level          | Explores one branch as deep as possible before backtracking |
+| Data Structure   | **Queue** (FIFO)                 | **Stack** (LIFO) or recursion                               |
+| Completeness     | ✅ (for finite branching factor) | Not always                                                  |
+| Optimality       | ✅ if all step costs are equal   | ⛔                                                          |
+| Time Complexity  | (O(b^d))                         | (O(b^m))                                                    |
+| Space Complexity | (O(b^d))                         | (O(bm))                                                     |
+| Memory Usage     | ⛔ High                          | ✅ Low                                                      |
+| Best Use         | Finding shortest path            | Memory-constrained problems                                 |
+
+Here,
+
+**b** = branching factor<br>
+**d** = depth of the shallowest solution<br>
+**m** = maximum depth of the search tree
+
+---
