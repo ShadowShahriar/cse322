@@ -486,6 +486,18 @@ Feature comparison of these four types of AI agent:
 | **Goal-Based**         | Chooses actions that help achieve _specific goals_.              | Uses _search_ and _planning_ mechanisms.             | More flexible and intelligent decision-making.       | Computationally expensive; may struggle with complex goals.              |
 | **Utility-Based**      | Selects actions that _maximize a utility_ (preference) function. | Evaluates and compares _multiple outcomes_.          | Handles uncertainty and trade-offs effectively.      | Designing utility functions can be difficult; computation may be costly. |
 
+Comparison by intelligence level:
+
+```text
+Simple Reflex
+      ↓
+Model-Based Reflex
+      ↓
+Goal-Based
+      ↓
+Utility-Based
+```
+
 ---
 
 ### 2.5A. Simple Reflex Agent
