@@ -44,18 +44,18 @@ We generate neighbors by swapping any two letters:
 
 From initial state **LPAET**:
 
-| Swap            | New State | h                           |
-| --------------- | --------- | --------------------------- |
-| L&nbsp;↔&nbsp;P | PLAET     | 1 (P correct)               |
-| L&nbsp;↔&nbsp;A | APLET     | 0                           |
-| L&nbsp;↔&nbsp;E | EPALT     | 1 (E correct at position 2) |
-| L&nbsp;↔&nbsp;T | TPAEL     | 0                           |
-| P&nbsp;↔&nbsp;A | LAPET     | 0                           |
-| P&nbsp;↔&nbsp;E | LEAPT     | 0                           |
-| P&nbsp;↔&nbsp;T | LTAEP     | 0                           |
-| A&nbsp;↔&nbsp;E | LPEAT     | 0                           |
-| A&nbsp;↔&nbsp;T | LPTEA     | 1 (T correct at position 3) |
-| E&nbsp;↔&nbsp;T | LPATE     | 0                           |
+| Swap            | New&nbsp;State | h                           |
+| --------------- | -------------- | --------------------------- |
+| L&nbsp;↔&nbsp;P | PLAET          | 1 (P correct)               |
+| L&nbsp;↔&nbsp;A | APLET          | 0                           |
+| L&nbsp;↔&nbsp;E | EPALT          | 1 (E correct at position 2) |
+| L&nbsp;↔&nbsp;T | TPAEL          | 0                           |
+| P&nbsp;↔&nbsp;A | LAPET          | 0                           |
+| P&nbsp;↔&nbsp;E | LEAPT          | 0                           |
+| P&nbsp;↔&nbsp;T | LTAEP          | 0                           |
+| A&nbsp;↔&nbsp;E | LPEAT          | 0                           |
+| A&nbsp;↔&nbsp;T | LPTEA          | 1 (T correct at position 3) |
+| E&nbsp;↔&nbsp;T | LPATE          | 0                           |
 
 ```
 Best heuristic value = 1
