@@ -172,6 +172,136 @@ There is **no Plateau** because the heuristic value increases along the chosen p
 
 <p align="center"><img src="2.jpg"/></p>
 
+<ins><b>Ans.:</b></ins> From the figure, Goal = **I**
+
+We know that Greedy Best-First Search (**GBFS**) chooses the node with the **smallest heuristic h(n)** only.
+
+If we start from **A**,
+
+| Node  | h(n)  |
+| ----- | ----- |
+| **B** | 9     |
+| **C** | _6_ ✔ |
+| **D** | 8     |
+| **E** | 10    |
+
+We choose **C** (smallest `h = 6`)
+
+Then from **C**,
+
+| Node  | h(n)  |
+| ----- | ----- |
+| **G** | 4     |
+| **H** | _2_ ✔ |
+
+We choose **H** (smallest `h = 2`).
+
+From **H**
+
+| Node  | h(n)         |
+| ----- | ------------ |
+| **I** | _0_ (✔ Goal) |
+
+We choose **I** and reach the goal.
+
+<p align="center"><img src="img02.png"/></p>
+
+**Path Cost:**
+
+```
+6 + 3 + 2 = 11
+```
+
+In constrast, **A\* Search** uses,
+
+```
+f(n) = g(n) + h(n)
+```
+
+where
+
+- `g(n)` = actual cost from start
+- `h(n)` = estimated cost to goal
+
+If we start from **A**,
+
+| Node  | g(n) | h(n) | f(n)   |
+| ----- | ---- | ---- | ------ |
+| **B** | 5    | 9    | 14     |
+| **C** | 6    | 6    | _12_ ✔ |
+| **D** | 7    | 8    | 15     |
+| **E** | 4    | 10   | 14     |
+
+We choose **C** (lowest `f = 12`).
+
+From **C**,
+
+| Node  | g(n)       | h(n) | f(n)   |
+| ----- | ---------- | ---- | ------ |
+| **G** | 6 + 4 = 10 | 4    | 14     |
+| **H** | 6 + 3 = 9  | 2    | _11_ ✔ |
+
+Ope nodes list:
+
+| Node  | f      |
+| ----- | ------ |
+| **H** | _11_ ✔ |
+| **B** | 14     |
+| **E** | 14     |
+| **G** | 14     |
+| **D** | 15     |
+
+We choose **H**. From **H**,
+
+| Node  | g(n)       | h(n) | f(n) |
+| ----- | ---------- | ---- | ---- |
+| **I** | 9 + 2 = 11 | 0    | 11   |
+
+Open nodes list:
+
+| Node  | f             |
+| ----- | ------------- |
+| **I** | _11_ (✔ Goal) |
+| **B** | 14            |
+| **E** | 14            |
+| **G** | 14            |
+| **D** | 15            |
+
+So, we choose **I** (Goal)
+
+<p align="center"><img src="img02.png"/></p>
+
+**Path Cost:**
+
+```
+6 + 3 + 2 = 11
+```
+
+<ins><b>Improved routing with A\* Search</b></ins>
+
+- Greedy Best-First Search (**GBFS**) uses only `h(n)` and selects the node that appears closest to the goal. But it ignores the distance already travelled. A node may look promising but could require a very expensive route.
+
+- **A\* Search** uses `f(n) = g(n) + h(n)` considering,
+    - **g(n):** actual cost already incurred and
+    - **h(n):** estimated remaining cost.
+
+- Thus **A\* Search** balances,
+    - current travel cost,
+    - future estimated cost.
+
+    This prevents the search from being misled by an attractive heuristic value alone.
+
+<ins><b>How Admissible Heuristics Guarantee Optimality</b></ins>
+
+A heuristic is **admissible** if: `h(n) <= h^*(n)` where `h^*(n)` is the true minimum cost from `n` to the goal. In other words, the heuristic **never overestimates** the remaining cost.
+
+Due to that, `f(n) = g(n) + h(n)` is always a lower-bound estimate of the true solution cost. That means,
+
+- **A\*** never ignores a potentially cheaper path.
+- The first goal node removed from the `open nodes list` is guaranteed to have the minimum path cost.
+
+Therefore, if the heuristic is **admissible** (_never overestimates the true remaining cost_), A\* is guaranteed to find the **optimal path** to the goal.
+
 ---
 
 [**↪ CT Archive**](https://shadowshahriar.github.io/cse322/theory/mid/#ct-archive)
