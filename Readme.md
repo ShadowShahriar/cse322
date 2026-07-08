@@ -68,6 +68,10 @@ Course offered by,
 - **Class 08**: 21 June 2026
 - [**Class 09**](https://shadowshahriar.github.io/cse322/notes/class-09.pdf): 22 June 2026 (Contributed by [**Munasib Maria Oyshi**](https://github.com/BlackPepper404))
 
+#### Final Term
+
+- [**Class 10**](https://shadowshahriar.github.io/cse322/notes/class-10.pdf): 6 July 2026 (Contributed by [**Munasib Maria Oyshi**](https://github.com/BlackPepper404))
+
 ## Colab Notebooks
 
 - [**Lab 01**](https://colab.research.google.com/drive/1Qj9KUcEoxfbyoZAGKe1dyPWY-CYMtPu1?usp=sharing): 10 May 2026
