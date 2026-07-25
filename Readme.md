@@ -73,6 +73,8 @@ Course offered by,
 - [**Class 10**](https://shadowshahriar.github.io/cse322/notes/class-10.pdf): 6 July 2026 (Contributed by [**Munasib Maria Oyshi**](https://github.com/BlackPepper404))
 - [**Class 11**](https://shadowshahriar.github.io/cse322/notes/class-11.pdf): 13 July 2026 (Contributed by [**Munasib Maria Oyshi**](https://github.com/BlackPepper404))
 - [**Class 12**](https://shadowshahriar.github.io/cse322/notes/class-12.pdf): 15 July 2026
+- [**Class 13**](https://shadowshahriar.github.io/cse322/notes/class-13.pdf): 19 July 2026
+- [**Class 14**](https://shadowshahriar.github.io/cse322/notes/class-14.pdf): 22 July 2026
 
 ## Colab Notebooks
 
