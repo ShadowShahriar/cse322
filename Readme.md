@@ -51,6 +51,11 @@ Course offered by,
 - **CT Examination**
     - [**01: PEAS, Goal-based Agents, Branches of AI**](https://shadowshahriar.github.io/cse322/notes/practice-01.pdf)
 
+## Final Project
+
+- [**Presentation**](https://shadowshahriar.github.io/cse322/project/presentation.pptx)
+- [**Report**](https://shadowshahriar.github.io/cse322/project/report.pdf)
+
 <!-- ## Assignment
 
 - [**Final Term Examination**](https://shadowshahriar.github.io/cse322/assignment/2026-04-24.pdf) -->
@@ -75,6 +80,9 @@ Course offered by,
 - [**Class 12**](https://shadowshahriar.github.io/cse322/notes/class-12.pdf): 15 July 2026
 - [**Class 13**](https://shadowshahriar.github.io/cse322/notes/class-13.pdf): 19 July 2026
 - [**Class 14**](https://shadowshahriar.github.io/cse322/notes/class-14.pdf): 22 July 2026
+- [**Class 15**](https://shadowshahriar.github.io/cse322/notes/class-15.pdf): 27 July 2026
+- **Class 16**: 29 July 2026
+- [**Class 17**](https://shadowshahriar.github.io/cse322/notes/class-17.pdf): 3 August 2026
 
 ## Colab Notebooks
 
@@ -82,7 +90,10 @@ Course offered by,
 - [**Lab 02**](https://colab.research.google.com/drive/1fT9JozQAKx1VjGg0ocbxUGILcs5GWLid?usp=sharing): 17 May 2026
 - [**Lab 03**](https://colab.research.google.com/drive/1NvzP6OhNh5YlK-IrAE8zsahTLKhu0yuV?usp=sharing): 7 June 2026
 - [**Lab 04**](https://colab.research.google.com/drive/19zolBMPVzNr8qGKEVid86Q3r_ab-WXTz?usp=sharing): 14 June 2026
-- **Lab 05**: 21 June 2026 (⛔ No longer available)
+- [**Lab 05**](https://colab.research.google.com/drive/12ZgNFuAxUCNq3VAl0fS8InHURUJVwpSJ?usp=sharing): 21 June 2026
+- [**Lab 06**](https://colab.research.google.com/drive/1Fq5TkscG73cLmoyvJNWYLyrZ5e12zLwj?usp=sharing): 19 July 2026
+- [**Lab 07**](https://colab.research.google.com/drive/1Mk6BtVWlsOo0gXCBrTaBekOCaGIAKbx-?usp=sharing): 26 July 2026
+- [**Lab 08**](https://colab.research.google.com/drive/1MM2sXYfR8PlqkgLkFbtm0TmlK1RYqjmf?usp=sharing): 9 August 2026
 
 ## Weekly Assessment Notebooks
 
