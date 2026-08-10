@@ -81,8 +81,9 @@ Course offered by,
 - [**Class 13**](https://shadowshahriar.github.io/cse322/notes/class-13.pdf): 19 July 2026
 - [**Class 14**](https://shadowshahriar.github.io/cse322/notes/class-14.pdf): 22 July 2026
 - [**Class 15**](https://shadowshahriar.github.io/cse322/notes/class-15.pdf): 27 July 2026
-- **Class 16**: 29 July 2026
+- [**Class 16**](https://shadowshahriar.github.io/cse322/notes/class-16.pdf): 29 July 2026 (Contributed by [**Amrin Jahan**](https://github.com/tushin07))
 - [**Class 17**](https://shadowshahriar.github.io/cse322/notes/class-17.pdf): 3 August 2026
+- [**Class 18**](https://shadowshahriar.github.io/cse322/notes/class-18.pdf): 10 August 2026
 
 ## Colab Notebooks
 
