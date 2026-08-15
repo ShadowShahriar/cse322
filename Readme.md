@@ -56,9 +56,9 @@ Course offered by,
 - [**Presentation**](https://shadowshahriar.github.io/cse322/project/presentation.pptx)
 - [**Report**](https://shadowshahriar.github.io/cse322/project/report.pdf)
 
-<!-- ## Assignment
+## Assignment
 
-- [**Final Term Examination**](https://shadowshahriar.github.io/cse322/assignment/2026-04-24.pdf) -->
+- [**Final Term Examination**](https://shadowshahriar.github.io/cse322/assignment/2026-08-17.pdf)
 
 ## Class Notes
 
@@ -84,6 +84,7 @@ Course offered by,
 - [**Class 16**](https://shadowshahriar.github.io/cse322/notes/class-16.pdf): 29 July 2026 (Contributed by [**Amrin Jahan**](https://github.com/tushin07))
 - [**Class 17**](https://shadowshahriar.github.io/cse322/notes/class-17.pdf): 3 August 2026
 - [**Class 18**](https://shadowshahriar.github.io/cse322/notes/class-18.pdf): 10 August 2026
+- [**Class 19**](https://shadowshahriar.github.io/cse322/notes/class-19.pdf): 12 August 2026
 
 ## Colab Notebooks
 
