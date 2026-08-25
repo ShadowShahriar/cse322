@@ -37,21 +37,21 @@
     - [**0/1 Knapsack Problem**](#33-01-knapsack-problem) ✅
 
 4. **Lecture 4**
-    - Confusion Matrix
-    - Types of Confusion
-    - Support Vector Machines (SVM)
-    - Regression Types
+    - [**Confusion Matrix**](#41-confusion-matrix) ✅
+    - [**Types of Confusion**](#types-of-confusion) ✅
+    - [**Performance Metrics**](#42-performance-metrics)
+    - [**Support Vector Machines (SVM)**](#43-support-vector-machines-svm) ✅
+    - [**(Linear) Regression Models**](#44-linear-regression-models) ✅
 
 5. **Lecture 5**
-    - Game Theory
-    - Mini-Max
-    - Alpha-Beta Pruning
+    - [**Game Theory**](#51-game-playing-with-ai) ✅
+    - [**Mini-Max Algorithm**](#52-mini-max-algorithm) ✅
+    - [**Alpha-Beta Pruning**](#53-alpha-beta-pruning) ✅
 
 6. **Lecture 6**
-    - Single Layer Perceptron
-    - Terminology
-    - Artificial vs Biological Neuron
-    - Reinforcement Learning
+    - [**Single Layer Perceptron**](#61-single-layer-perceptron) ✅
+    - [**Artificial vs Biological Neuron**](#62-ann-vs-bnn) ✅
+    - [**Reinforcement Learning**](#63-reinforcement-learning) ✅
 
 ## Definitions
 
@@ -538,5 +538,234 @@ A genetic algorithm solves the 0/1 Knapsack Problem by **evolving a population o
 5. <ins><b>Crossover:</b></ins> Swap parts of parent chromosomes (such as single-point crossover) to produce child solutions.
 
 6. <ins><b>Mutation:</b></ins> Randomly flip bits with a very low probability to maintain genetic diversity and avoid getting stuck in local optima.
+
+[**↪ Topic List**](#topic-list)
+
+---
+
+### 4.1. Confusion Matrix
+
+A confusion matrix is a simple table used to evaluate the performance of a classification model.
+
+#### Types of Confusion
+
+- **True Positive (TP):** The model says yes, and the true answer is yes.
+- **True Negative (TN):** The model says no, and the true answer is no.
+- **False Positive (FP):** The model says yes, but the true answer is no **(Type 1 error)**.
+- **False Negative (FN):** The model says no, but the true answer is yes **(Type 2 error)**.
+
+<p align="center"><img src="img06.png"/><br><i><u>figure 4.1.: Confusion Matrix.</u></i></p>
+
+[**↪ Topic List**](#topic-list)
+
+---
+
+### 4.2. Performance Metrics
+
+<p align="center"><img src="img07.png"/><br><i><u>figure 4.2.: Performance Metrics Calculation using Confusion Matrix.</u></i></p>
+
+[**↪ Topic List**](#topic-list)
+
+---
+
+### 4.3. Support Vector Machines (SVM)
+
+A **Support Vector Machine (SVM)** is a popular supervised ML algorithm used to sort data into different groups or categories.
+
+- **Linear SVM:** Used when data can be neatly split by a straight line or flat plane.
+
+- **Non-Linear SVM:** Used when data is mixed up and cannot be split by a straight line. It uses a tool called a kernel to lift data into a higher dimension where a clean line can divide it.
+
+<p align="center"><img src="img08.png"/><br><i><u>figure 4.3.: SVM Types.</u></i></p>
+
+[**↪ Topic List**](#topic-list)
+
+---
+
+### 4.4. Linear Regression Models
+
+1. **Simple Linear Regression:** Uses a single input variable to fit a straight line predicting a continuous output.
+
+2. **Multiple Linear Regression:** Uses two or more input variables to predict a single continuous output.
+
+3. **Polynomial Regression:** Fits a curved or non-linear line by adding powers of the input variables.
+
+[**↪ Topic List**](#topic-list)
+
+---
+
+### 5.1. Game Playing with AI
+
+Game playing is non-trivial.
+
+1. Needs "human-like" intelligence,
+2. Can be very complex,
+3. Needs decision making within limited time.
+
+Games are,
+
+1. Well-defined and repeatable,
+2. Limited and accessible.
+
+There are two types of Game Playing Algorithm,
+
+1. **Mini-max Algorithm**,
+2. **Alpha-Beta Pruning**.
+
+[**↪ Topic List**](#topic-list)
+
+---
+
+### 5.2. Mini-Max Algorithm
+
+The Minimax algorithm is a backtracking, decision-making algorithm used in game theory and artificial intelligence to find the optimal move for a player in a two-player, turn-based, zero-sum game.
+
+It operates on the fundamental assumption that both players will play perfectly (optimally) throughout the match.
+
+<p align="center"><img src="img09.jpg"/><br><i><u>figure 5.2.: Game Tree.</u></i></p>
+
+#### Terminology
+
+- **Maximizer (MAX):** The player attempting to get the highest score possible.
+- **Minimizer (MIN):** The opponent attempting to minimize the maximizer's score (giving the maximizer the lowest possible score).
+- **Game Tree:** A tree graph representation of all potential moves, where nodes represent game states and edges represent moves.
+- **Terminal States:** The final leaf nodes representing game over (win, loss, or draw).
+- **Utility / Heuristic Value:** A score assigned to terminal states (e.g., +1 for a win, -1 for a loss, 0 for a draw).
+
+#### Workflow
+
+The algorithm explores paths recursively using a Depth-First Search (DFS) strategy:
+
+```
+      [ MAX ]          Level 0 (Root Node - Your Turn)
+     /       \
+ [ MIN ]   [ MIN ]     Level 1 (Opponent's Turn)
+ /    \     /    \
+3      5   2      9    Level 2 (Terminal Leaf Nodes)
+```
+
+1. **Tree Generation**
+
+    The AI generates the game tree from the current state down to the terminal nodes.
+
+2. **Leaf Evaluation**
+
+    The utility function calculates static scores for all end-game leaf nodes.
+
+3. **Backpropagation**
+
+    The scores are passed upward through the tree, level by level:
+    - At a MIN level, the parent node inherits the minimum score among its children.
+    - At a MAX level, the parent node inherits the maximum score among its children.
+
+4. **Move Choice**
+
+    Upon reaching the root node, MAX safely selects the move leading to the absolute highest guaranteed value.
+
+[**↪ Topic List**](#topic-list)
+
+---
+
+### 5.3. Alpha-Beta Pruning
+
+**Alpha-beta pruning** is a search optimization algorithm for the minimax algorithm.
+
+It reduces the number of nodes evaluated in a game tree by cutting off branches that cannot influence the final decision, maintaining the same optimal result while significantly speeding up computation.
+
+<p align="center"><img src="img10.png"/><br><i><u>figure 5.3.: Alpha-Beta pruning.</u></i></p>
+
+- **Alpha (α):** The highest score the maximizing player can guarantee so far. Initialized to **negative infinity (-∞)**.
+- **Beta (β):** The lowest score the minimizing player can guarantee so far. Initialized to **positive infinity (+∞)**.
+
+#### Workflow
+
+- **Condition:** Stop evaluation and prune the remaining branches of a node if _α ≥ β_.
+- **Reasoning:** If a player already has a better or equal option elsewhere, the opponent will force play away from the current branch, making further exploration useless.
+
+[**↪ Topic List**](#topic-list)
+
+---
+
+### 6.1. Single Layer Perceptron
+
+A **single layer perceptron** is the most basic type of artificial neural network. It has an input layer that passes data directly to an output layer without any hidden layers.
+
+<p align="center"><img src="img11.png"/><br><i><u>figure 6.1.: Single Layer Perceptron.</u></i></p>
+
+#### Working Principle
+
+- **Inputs:** Raw data features (_x1_, _x2_) enter the network.
+- **Weights:** Each input gets multiplied by a weight (_w1_, _w2_, ...) to show its importance.
+- **Bias:** A constant value added to shift the decision boundary.
+- **Summation:** Calculates the weighted sum:
+
+    ```
+    z = ∑(xi • wi) + b
+    ```
+
+- **Activation:** A step or threshold function turns the sum into a binary output, usually 0 or 1.
+
+#### Training and Learning
+
+- Starts with random weights and a random bias.
+- Processes training inputs to predict an output.
+- Compares the prediction to the real target value to find the error.
+- Updates weights using the perceptron learning rule until errors stop.
+
+#### Pros and Cons
+
+- **Fast and simple:** Requires little compute power and trains very quickly.
+- **Linear separation:** Works well for simple logic gates like **AND** and **OR**.
+- **Cannot solve non-linear tasks:** Fails on complex patterns like the **XOR** problem because it can only draw a straight line.
+
+[**↪ Topic List**](#topic-list)
+
+---
+
+### 6.2. ANN vs BNN
+
+> "Biological and artificial neurons differ fundamentally in their physical structure, signal transmission methods, and energy efficiency, despite artificial models being loosely inspired by the brain."
+
+1. **Structure and Components**
+    - **Biological Neuron:** Made of a cell body (soma), branching dendrites that receive signals, and a single long axon that sends them out.
+    - **Artificial Neuron:** Made of mathematical inputs, static or dynamic numeric weights, a bias term, and an activation function.
+
+2. **Signal and Communication**
+    - **Biological Neuron:** Uses electrochemical impulses, action potentials, and chemical neurotransmitters across synapses.
+    - **Artificial Neuron:** Passes simple numerical floating-point values forward through weighted multiplication and layers.
+
+3. **Learning and Adaptability**
+    - **Biological Neuron:** Continuously adapts via synaptic plasticity, growing or pruning connections dynamically based on lived experience.
+    - **Artificial Neuron:** Learns in structured training phases using algorithms like backpropagation and gradient descent to modify weights.
+
+4. **Energy and Efficiency**
+    - **Biological Neuron:** Operates within a massively parallel network using only about _20 watts\*_ of power.
+    - **Artificial Neuron:** Demands high-powered computing hardware or GPUs, consuming significantly more energy during training and inference.
+
+[**↪ Topic List**](#topic-list)
+
+---
+
+### 6.3. Reinforcement Learning
+
+A branch of ML where an autonomous agent learns to make decisions by performing actions and interacting with an environment to maximize cumulative rewards.
+
+#### Core Components
+
+- **Agent:** The learner or decision-maker.
+- **Environment:** The external world or system the agent interacts with.
+- **State:** The current condition or situation of the agent.
+- **Action:** The moves or decisions the agent can choose from.
+- **Reward:** The positive or negative feedback signal given by the environment after an action.
+
+#### Working Principle
+
+- The agent observes the current state of the environment.
+- It selects an action based on its strategy, called a policy.
+- The environment shifts to a new state and returns a reward or penalty.
+- The agent updates its knowledge to favor good choices in the future.
+- It constantly balances exploration (trying new moves) with exploitation (using known good moves).
+
+<p align="center"><img src="img12.png"/><br><i><u>figure 6.3.: The general framework of reinforcement learning.</u></i></p>
 
 [**↪ Topic List**](#topic-list)
