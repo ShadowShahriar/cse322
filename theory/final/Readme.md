@@ -3,32 +3,31 @@
 ## Topic List
 
 1. **Lecture 1**
-    - [**Uncertainty**](#uncertainty)
-    - [**Causes of Uncertainty**](#causes-of-uncertainty)
-    - [**Rational Decisions**](#11-how-rational-decisions-are-made-using-decision-theory)
-    - [**Decision Tree**](#decision-tree)
-    - [**Principle of MEU**](#principle-of-meu)
-    - [**Probability**](#13-why-probability-is-needed)
-    - [**Types of Probability**](#14-types-of-probability)
-    - [**Random Variable**](#random-variable)
-    - [**Probabilty Model**](#15-probabilty-model)
-    - Joint Probability Distribution
-    - Conditional Probability
-    - Inference by Enumeration
-    - Normalization
-    - Conditional Independence
-    - Bayes' Rule
-    - Combining Evidence
+    - [**Uncertainty**](#uncertainty) ✅
+    - [**Causes of Uncertainty**](#causes-of-uncertainty) ✅
+    - [**Rational Decisions**](#11-how-rational-decisions-are-made-using-decision-theory) ✅
+    - [**Decision Tree**](#decision-tree) ✅
+    - [**Principle of MEU**](#principle-of-meu) ✅
+    - [**Probability**](#13-why-probability-is-needed) ✅
+    - [**Types of Probability**](#14-types-of-probability) ✅
+    - [**Random Variable**](#random-variable) ✅
+    - [**Probabilty Model**](#15-probabilty-model) ✅
+    - [**Joint Probability Distribution**](#joint-probability-distribution) ✅
+    - [**Conditional Probability**](#conditional-probability) ✅
+    - [**Inference by Enumeration**](#inference-by-enumeration) ✅
+    - [**Normalization**](#normalization) ✅
+    - [**Conditional Independence**](#conditional-independence) ✅
+    - [**Bayes' Rule**](#bayes-rule) ✅
+    - Combining Evidence ⛔
 
 2. **Lecture 2**
-    - Bayesian Networks
-    - Naive Bayes
-    - Classification vs Regression
-    - Bayesian Classification
-    - Naive Bayes Models
-    - NBC Advantages and Disadvantages
-    - Bayes' Theorem
-    - NBC Training Dataset
+    - [**Bayesian Network**](#21-bayesian-network) ✅
+    - [**Naive Bayes**](#22-naive-bayes) ✅
+    - [**Naive Bayes Models**](#23-naive-bayes-models) ✅
+    - [**Bayes Classification**](#bayes-classification) ✅
+    - [**Classification vs Regression**](#24-classification-vs-regression) ✅
+    - [**NBC Advantages and Disadvantages**](#25-advantages-and-disadvantages-of-naive-bayes-classifier) ✅
+    - [**NBC Training Dataset**](#26-training-dataset-of-naive-bayes-classifiers) ✅
 
 3. **Lecture 3**
     - Genetic Algorithm
@@ -52,6 +51,7 @@
     - Single Layer Perceptron
     - Terminology
     - Artificial vs Biological Neuron
+    - Reinforcement Learning
 
 ## Definitions
 
@@ -125,6 +125,70 @@ P(Weather) = [0.7 0.2 0.08 0.02]
 ```
 
 [**↪ Topic List**](#topic-list)
+
+### Joint Probability Distribution
+
+A **joint probability distribution** gives the chance that two or more random variables happen at the same time. Written as `P(X = x, Y = y)`, it shows how variables link together.
+
+**Concepts:**
+
+- **Discrete Variables:** Uses a joint **probability mass function (PMF)** where all values add up to 1.
+- **Continuous Variables:** Uses a joint **probability density function (PDF)** where total volume under the surface equals 1.
+- **Independence:** Two variables are independent if their joint value equals the product of their individual parts: `P(X, Y) = P(X) • P(Y)`.
+
+[**↪ Topic List**](#topic-list)
+
+### Conditional Probability
+
+**Conditional probability** is the likelihood of an event happening based on the occurrence of a previous or known event.
+
+- Written as `P(A|B)`, which means _the probability of event A given event B_.
+- The vertical bar (&#124;) is read as "given".
+- It means we look at a reduced sample space where **event B** has already happened.
+
+<p align="center"><img src="img01.png"/><br><i><u>figure 0.1.: Formula of Conditional Probability.</u></i></p>
+
+The **chain rule** (or **general product rule**) lets us find the joint probability of multiple events by multiplying individual conditional probabilities:
+
+For **two events A and B**, the rule is:
+
+<p align="center"><img src="img02.png"/></p>
+
+[**↪ Topic List**](#topic-list)
+
+### Inference by Enumeration
+
+**Inference by enumeration** is a baseline exact algorithm used to compute the **posterior probability** of a query variable in a Bayesian network by summing terms from the full joint distribution.
+
+[**↪ Topic List**](#topic-list)
+
+### Normalization
+
+**Normalization** is a data-preprocessing technique that scales numerical input features to a common range, most commonly between **0** and **1**.
+
+[**↪ Topic List**](#topic-list)
+
+### Conditional Independence
+
+**Conditional independence** means two random variables are independent of each other once the value of a third variable is known.
+
+In probability theory, two events **A** and **B** are conditionally independent given a third **event C** if the conditional probability of **A** and **B** occurring together given **C** equals the product of their individual conditional probabilities:
+
+<p align="center"><img src="img03.png"/><br><i><u>figure 0.3.: Conditional Independence.</u></i></p>
+
+This means that once we know **C** has happened, learning extra information about **A** gives us no new details about **B**, and vice versa.
+
+[**↪ Topic List**](#topic-list)
+
+### Bayes' Rule
+
+**Bayes' Rule** is a mathematical formula that lets us update the probability of an event when we get new evidence or information.
+
+<p align="center"><img src="img04.png"/><br><i><u>figure 0.4.: Bayes' Rule.</u></i></p>
+
+### Bayes Classification
+
+**Bayes Classification** is a Supervised machine learning approach for classification. It works on a probabilistic method based on **Bayes Theorem**.
 
 ---
 
@@ -235,3 +299,114 @@ A **probability model** is a mathematical description of a random situation that
 ```
 
 [**↪ Topic List**](#topic-list)
+
+---
+
+### 2.1. Bayesian Network
+
+A **Bayesian network** is a probabilistic graphical model that represents a set of variables and their conditional dependencies using a **directed acyclic graph (DAG)**. The graphs have no loops, meaning we can never follow the arrows back to our starting point, which prevents infinite feedback loops.
+
+[**↪ Topic List**](#topic-list)
+
+---
+
+### 2.2. Naive Bayes
+
+**Naive Bayes** is a fast, simple machine learning classification algorithm based on **probability** and **Bayes' Theorem**.
+
+It is called _naive_ because it assumes all features in a dataset are completely independent of one another, an idea that is rarely true in real life but makes the math very easy and efficient.
+
+**Use cases:**
+
+1. Spam filtering
+2. Sentiment analysis
+3. Document categorization
+
+[**↪ Topic List**](#topic-list)
+
+---
+
+### 2.3. Naive Bayes Models
+
+1. **Gaussian:** Used for continuous data (like height or weight)
+2. **Multinomial:** Used for discrete counts
+3. **Bernoulli:** Used when features are binary
+
+[**↪ Topic List**](#topic-list)
+
+---
+
+### 2.4. Classification vs Regression
+
+|                      | Classification                       | Regression                                           |
+| :------------------- | :----------------------------------- | :--------------------------------------------------- |
+| **Output&nbsp;Type** | Class labels                         | Real numbers                                         |
+| **Goal**             | Draw a decision boundary             | Fit a best-fit line or curve                         |
+| **Evaluation**       | Uses accuracy, precision, and recall | Uses error metrics like **Mean Squared Error (MSE)** |
+
+**Examples:**
+
+| Classification                  | Regression                                       |
+| :------------------------------ | :----------------------------------------------- |
+| Is an email spam or not?        | What will the exact selling price of a house be? |
+| Is a tumor malignant or benign? | What will the temperature be tomorrow?           |
+| What animal is in the photo?    | How much rain will fall next week?               |
+
+[**↪ Topic List**](#topic-list)
+
+---
+
+### 2.5. Advantages and Disadvantages of Naive Bayes Classifier
+
+**Advantages**
+
+- **High speed and efficiency**
+
+    It trains and predicts very quickly, making it ideal for real-time applications like spam detection.
+
+- **Handles high-dimensional data**
+
+    It performs remarkably well with large numbers of features, such as words in document classification.
+
+- **Low data requirement**
+
+    It needs relatively little training data to estimate parameters accurately.
+
+- **Simple implementation**
+
+    It has minimal hyperparameters to tune compared to deep learning models.
+
+**Disadvantages**
+
+- **Independence assumption**
+
+    It assumes all features are independent, which rarely matches real-world correlated data.
+
+- **Zero-frequency problem**
+
+    It assigns zero probability to unseen categorical values in test data unless smoothing is applied.
+
+- **Imbalanced data sensitivity**
+
+    It can struggle and lean toward majority classes if the dataset is heavily skewed.
+
+- **Poor probability estimates**
+
+    While it predicts classes well, its calculated probability outputs are not always reliable.
+
+[**↪ Topic List**](#topic-list)
+
+---
+
+### 2.6. Training Dataset of Naive Bayes Classifiers
+
+A training dataset for a Naive Bayes classifier is a collection of **labeled data** containing _input features_ and a _target class label_ used to calculate conditional probabilities.
+
+**Key Structure:**
+
+- **Feature Matrix (_X_):** Contains the input variables or attributes (such as word counts, weather conditions, or measurements) that describe each data point.
+- **Response Vector (_y_):** Contains the known category or class label (such as "spam" or "ham", "yes" or "no") for each row in the feature matrix.
+
+[**↪ Topic List**](#topic-list)
+
+---
