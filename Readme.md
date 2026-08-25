@@ -37,14 +37,12 @@ Course offered by,
     - [Theoretical Questions](https://shadowshahriar.github.io/cse322/theory/mid/#theoretical-questions)
     - [CT Questions](https://shadowshahriar.github.io/cse322/theory/mid/#ct-archive)
 
-<!--
-
 - [**Final Term Examination**](https://shadowshahriar.github.io/cse322/theory/final/#final-term-examination)
     - [Topic List](https://shadowshahriar.github.io/cse322/theory/final/#topic-list)
-    - [Full Forms](https://shadowshahriar.github.io/cse322/theory/final/#full-forms)
+      <!-- - [Full Forms](https://shadowshahriar.github.io/cse322/theory/final/#full-forms) -->
     - [Definitions](https://shadowshahriar.github.io/cse322/theory/final/#definitions)
     - [Theoretical Questions](https://shadowshahriar.github.io/cse322/theory/final/#theoretical-questions)
-    - [CT Questions](https://shadowshahriar.github.io/cse322/theory/final/#ct-questions) -->
+      <!-- - [CT Questions](https://shadowshahriar.github.io/cse322/theory/final/#ct-questions) -->
 
 ## Practice Problems
 
