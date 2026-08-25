@@ -30,11 +30,11 @@
     - [**NBC Training Dataset**](#26-training-dataset-of-naive-bayes-classifiers) ✅
 
 3. **Lecture 3**
-    - Genetic Algorithm
-    - GA Keywords and Terminology
-    - GA Flowchart
-    - Traveling Salesman Problem (TSP)
-    - 0/1 Knapsack Problem
+    - [**Genetic Algorithm**](#31-genetic-algorithm) ✅
+    - [**GA Keywords and Terminology**](#keywords-and-terminology) ✅
+    - [**GA Flowchart**](#flowchart) ✅
+    - [**Traveling Salesman Problem (TSP)**](#32-traveling-salesman-problem-tsp) ✅
+    - [**0/1 Knapsack Problem**](#33-01-knapsack-problem) ✅
 
 4. **Lecture 4**
     - Confusion Matrix
@@ -410,3 +410,133 @@ A training dataset for a Naive Bayes classifier is a collection of **labeled dat
 [**↪ Topic List**](#topic-list)
 
 ---
+
+### 3.1. Genetic Algorithm
+
+A **genetic algorithm (GA)** is an artificial intelligence search and optimization technique based on **natural selection** and **genetics**. It is a type of evolutionary computation inspired by _Darwin's theory of evolution_.
+
+It evolves a pool of candidate solutions over multiple generations using selection, crossover, and mutation to solve complex problems where traditional math methods fail.
+
+#### Working Principle
+
+- **Population:** A set of multiple candidate solutions (called chromosomes).
+- **Fitness Function:** A score that shows how well a specific solution solves the goal.
+- **Selection:** Picking the best-scoring solutions to act as parents.
+- **Crossover:** Combining parts of two parents to make new child solutions.
+- **Mutation:** Changing random parts of a child solution to keep variety in the pool.
+- **Repeat:** The cycle runs until it finds a good solution or hits a set limit.
+
+[**↪ Topic List**](#topic-list)
+
+#### Keywords and Terminology
+
+- <ins><b>Evolution:</b></ins> A series of genetic changes by which a living organism acquires characteristics that distinguish it from other organisms.
+
+- <ins><b>Gene:</b></ins> A basic unit of chromosome that controls the development of a particular feature of a living organism. A gene is represented by either 0 or 1.
+
+- <ins><b>Chromosomes:</b></ins> A string of genes that represent an individual. Each chromosome consists of a number of gene.
+
+- <ins><b>Fitness:</b></ins> The ability of a living organism to survive and reproduce in a specific environment.
+
+- <ins><b>Crossover:</b></ins> A reproduction operator that creates a new chromosome by exchanging parts of two existing chromosome.
+
+- <ins><b>Mutation:</b></ins> A genetic operator that randomly change the gene value in a chromosome.
+
+- <ins><b>Fitness Function:</b></ins> A mathematical function used for calculating the fitness of a chromosome.
+
+- <ins><b>Crossover Probability:</b></ins> A number between zero and one that indicates the probability of two chromosomes crossing over.
+
+- <ins><b>Mutation Probability:</b></ins> A number between zero and one that indicates the probability of mutation occurring in a single gene.
+
+- <ins><b>Offspring:</b></ins> An individual that was produced through reproduction. It also referred to as child.
+
+- <ins><b>Population:</b></ins> A group of individuals that breed together.
+
+[**↪ Topic List**](#topic-list)
+
+#### Flowchart
+
+<p align="center"><img src="img05.png"/><br><i><u>figure 3.1.: Flowchart of Genetic Algorithm.</u></i></p>
+
+[**↪ Topic List**](#topic-list)
+
+---
+
+### 3.2. Traveling Salesman Problem (TSP)
+
+Genetic Algorithm solves **TSP** by mimicking natural selection to find a near-optimal, shortest route through a set of cities.
+
+- Because TSP is an **NP-hard optimization problem**, checking every single combination becomes computationally impossible as the number of cities grows.
+
+- Genetic Algorithm offers an efficient workaround by evolving a population of guess routes over multiple generations until they converge on an efficient path.
+
+#### Components
+
+The components of the Traveling Salesman Problem mapped directly to biological concepts:
+
+- **Gene:** A single city (e.g., _City A_, _City B_).
+
+- **Chromosome (Individual):** A complete valid route that visits every city exactly once and returns to the start (e.g., _(A -> C -> B -> D)_).
+
+- **Population:** A collection of multiple alternative routes.
+
+- **Fitness Score:** The inverse of the total route distance. **Shorter paths mean higher fitness.**
+
+#### Workflow
+
+1. <ins><b>Initialization</b></ins>
+
+    The algorithm generates an initial population of `P` chromosomes. These are typically created by randomly shuffling the list of cities for each individual to ensure a highly diverse starting gene pool.
+
+2. <ins><b>Fitness Evaluation</b></ins>
+
+    The total travel distance is calculated for each route. The fitness formula ensures that shorter paths are prioritized:
+
+    ```
+    Fitness = 1 / Distance
+    ```
+
+3. <ins><b>Selection</b></ins>
+
+    The algorithm selects the best-performing parent routes to pass their traits to the next generation. Common selection methods include:
+    - **Roulette Wheel Selection:** Parent routes are chosen randomly, but their probability of selection is proportional to their fitness score.
+    - **Tournament Selection:** A small random subset of paths is picked, and the single shortest route among them wins the right to mate.
+    - **Elitism:** A designated percentage of the absolute shortest routes are copied directly into the next generation without modification to preserve top-tier solutions.
+
+4. <ins><b>Crossover (Recombination)</b></ins>
+
+    Two selected parent routes combine to form a new child route. **Standard crossovers do not work for TSP** because they can easily produce illegal routes that skip cities or visit the same city twice. Specialized operators must be used instead.
+
+5. <ins><b>Mutation</b></ins>
+
+    To prevent the algorithm from getting stuck in localized bad habits (local optima), minor random variations are injected into the offspring.
+    - **Swap Mutation:** Two randomly selected cities in a single path swap their positions.
+    - **Inversion Mutation:** A random subset sequence of the route is cut out, completely reversed, and spliced back into the path.
+
+6. <ins><b>Termination</b></ins>
+
+    **Steps 2 through 5 repeat** for a set number of generations (`n`), or until the total route distance stops improving over a fixed period of time.
+
+[**↪ Topic List**](#topic-list)
+
+---
+
+### 3.3. 0/1 Knapsack Problem
+
+A genetic algorithm solves the 0/1 Knapsack Problem by **evolving a population of binary bit strings** where each bit represents including (1) or excluding (0) a specific item; to maximize total value without exceeding weight limits.
+
+#### Workflow
+
+1. <ins><b>Representation:</b></ins> Encode solutions as a binary array (chromosome) of length n (total items), where 1 means the item is picked and 0 means it is left behind.
+
+2. <ins><b>Population Initialization:</b></ins> Generate a random starting group of potential bit-string solutions.
+
+3. <ins><b>Fitness Evaluation:</b></ins> Sum the total value of chosen items. If total weight exceeds the maximum capacity, assign a fitness score of zero (or apply a heavy penalty).
+
+4. <ins><b>Selection:</b></ins> Choose healthier parent solutions using methods like tournament selection or roulette-wheel selection so better solutions reproduce more often.
+
+5. <ins><b>Crossover:</b></ins> Swap parts of parent chromosomes (such as single-point crossover) to produce child solutions.
+
+6. <ins><b>Mutation:</b></ins> Randomly flip bits with a very low probability to maintain genetic diversity and avoid getting stuck in local optima.
+
+[**↪ Topic List**](#topic-list)
