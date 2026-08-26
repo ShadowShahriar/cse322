@@ -51,6 +51,9 @@ Course offered by,
     - [**04: Naive Bayes Classification**](https://shadowshahriar.github.io/cse322/notes/practice-04.pdf)
     - [**05: Bayesian Network**](https://shadowshahriar.github.io/cse322/notes/practice-05.pdf)
 
+- **Problem Sets**
+    - [**Set A**](https://shadowshahriar.github.io/cse322/theory/set/#set-a)
+
 ## Final Project
 
 - [**Presentation**](https://shadowshahriar.github.io/cse322/project/presentation.pptx)

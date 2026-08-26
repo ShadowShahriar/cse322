@@ -1,11 +1,15 @@
 # Problem Sets
 
-Curated by **Ifat Tamanna Metu**.<br>
+Curated by **Ifat Metu**.<br>
 Solved by **Shayan Shahriar**.
 
 ## Set A
 
 <p align="center"><img src="img01.jpg" width="70%"/></p>
+
+[**↪ Solution 1**](#ans-to-the-ques-no-1)<br>
+[**↪ Solution 2**](#ans-to-the-ques-no-2)<br>
+[**↪ Solution 3**](#ans-to-the-ques-no-3)<br>
 
 ### <ins>Ans to the Ques no. 1</ins>
 
@@ -107,6 +111,8 @@ Fitness value:
 18 + 15 = 33
 ```
 
+[**↪ Problem Set**](#set-a)
+
 #### 2. Apply mutation after crossover.
 
 <ins><strong>Ans.:</strong></ins> Mutation means randomly changing one or more bits. Suppose, the mutation occurs at **gene 4** of **O2**:
@@ -135,6 +141,8 @@ New fitness value:
 ```
 18 + 45 + 15 = 78
 ```
+
+[**↪ Problem Set**](#set-a)
 
 ### <ins>Ans to the Ques no. 2</ins>
 
@@ -179,6 +187,8 @@ $$
 \text{Actually Not Eligible} & 40 & 210
 \end{array}}
 $$
+
+[**↪ Problem Set**](#set-a)
 
 #### 2. Calculate Accuracy, Precision, Recall and F1-Score.
 
@@ -283,9 +293,81 @@ $$
 \boxed{F1=2\times\frac{Precision\times Recall}{Precision+Recall}}
 $$
 
+[**↪ Problem Set**](#set-a)
+
 ### <ins>Ans to the Ques no. 3</ins>
 
-<ins><strong>Ans.:</strong></ins>
+<ins><strong>Ans.:</strong></ins> Given here,
+
+$$
+w_1=0.7,\qquad w_2=0.6
+$$
+
+$$
+Learning\,rate,\,\eta=0.2,\qquad \theta=0.6
+$$
+
+OR-gate training data:
+
+| Pattern | $x_1$ | $x_2$ | Target \($t$\) |
+| ------- | ----: | ----: | -------------: |
+| 1       |     0 |     0 |              0 |
+| 2       |     0 |     1 |              1 |
+| 3       |     1 |     0 |              1 |
+| 4       |     1 |     1 |              1 |
+
+We know,
+
+**Net input:**
+
+$$
+net=x_1w_1+x_2w_2
+$$
+
+**Activation function:**
+
+$$
+y=
+\begin{cases}
+1,&net\geq\theta\\
+0,&net<\theta
+\end{cases}
+$$
+
+**Error:**
+
+$$
+e=t-y
+$$
+
+**Weight update:**
+
+$$
+w_i^{new}=w_i+\eta e x_i
+$$
+
+#### Epoch 1
+
+Initial weights:
+
+$$
+\boxed{w_1=0.7,\quad w_2=0.6}
+$$
+
+| Pattern | $x_1$ | $x_2$ | $t$ | $w_1$ | $w_2$ | $net=x_1w_1+x_2w_2$ | $y$ | $e=t-y$ | $\Delta w_1=\eta ex_1$ | $\Delta w_2=\eta ex_2$ | New $w_1$ | New $w_2$ |
+| ------- | ----: | ----: | --: | ----: | ----: | ------------------: | --: | ------: | ---------------------: | ---------------------: | --------: | --------: |
+| 1       |     0 |     0 |   0 |   0.7 |   0.6 |   $0(0.7)+0(0.6)=0$ |   0 | $0-0=0$ |          $0.2(0)(0)=0$ |          $0.2(0)(0)=0$ |   **0.7** |   **0.6** |
+| 2       |     0 |     1 |   1 |   0.7 |   0.6 | $0(0.7)+1(0.6)=0.6$ |   1 | $1-1=0$ |          $0.2(0)(0)=0$ |          $0.2(0)(1)=0$ |   **0.7** |   **0.6** |
+| 3       |     1 |     0 |   1 |   0.7 |   0.6 | $1(0.7)+0(0.6)=0.7$ |   1 | $1-1=0$ |          $0.2(0)(1)=0$ |          $0.2(0)(0)=0$ |   **0.7** |   **0.6** |
+| 4       |     1 |     1 |   1 |   0.7 |   0.6 | $1(0.7)+1(0.6)=1.3$ |   1 | $1-1=0$ |          $0.2(0)(1)=0$ |          $0.2(0)(1)=0$ |   **0.7** |   **0.6** |
+
+| Epoch | Initial $w_1$ | Initial $w_2$ | Errors | Final $w_1$ | Final $w_2$ | Status        |
+| ----- | ------------: | ------------: | -----: | ----------: | ----------: | ------------- |
+| 1     |           0.7 |           0.6 |      0 |         0.7 |         0.6 | **Converged** |
+
+The perceptron converges in the first epoch because all four OR-gate training patterns are correctly classified using the initial weights $w_1=0.7$, $w_2=0.6$, and threshold $\theta=0.6$. Therefore, no weight adjustment is required.
+
+[**↪ Problem Set**](#set-a)
 
 ---
 
