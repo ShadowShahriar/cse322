@@ -7,7 +7,7 @@ Solved by **Shayan Shahriar**.
 
 <p align="center"><img src="img01.jpg" width="70%"/></p>
 
-### <p align="center"><ins>Ans to the Ques no. 1</ins></p>
+### <ins>Ans to the Ques no. 1</ins>
 
 Given here,<br>
 Maximum truck capacity = **10 kg**<br>
@@ -136,15 +136,136 @@ New fitness value:
 18 + 45 + 15 = 78
 ```
 
-### <p align="center"><ins>Ans to the Ques no. 2</ins></p>
+### <ins>Ans to the Ques no. 2</ins>
 
 #### 1. Construct the Confusion Matrix.
 
-<ins><strong>Ans.:</strong></ins>
+<ins><strong>Ans.:</strong></ins> Given there are **500 loan applicants**.
+
+- **220 eligible** applicants were correctly predicted as eligible.
+- **30 eligible** applicants were incorrectly predicted as not eligible.
+- **40 ineligible** applicants were incorrectly predicted as eligible.
+- The remaining ineligible applicants were correctly predicted as not eligible.
+
+Identifying the four parts of the confusion matrix:
+
+- **TP (True Positive)** = eligible predicted as eligible = **220**
+- **FN (False Negative)** = eligible predicted as not eligible = **30**
+- **FP (False Positive)** = ineligible predicted as eligible = **40**
+- **TN (True Negative)** = ineligible predicted as not eligible = ?
+
+Total applicants = 500.
+
+$$
+TP+FN+FP+TN=500
+$$
+
+$$
+220+30+40+TN=500
+$$
+
+$$
+TN=500-290=\boxed{210}
+$$
+
+So the confusion matrix is:
+
+$$
+\boxed{
+\begin{array}{c|cc}
+ & \text{Predicted Eligible} & \text{Predicted Not Eligible}\\
+\hline
+\text{Actually Eligible} & 220 & 30\\
+\text{Actually Not Eligible} & 40 & 210
+\end{array}}
+$$
 
 #### 2. Calculate Accuracy, Precision, Recall and F1-Score.
 
-<ins><strong>Ans.:</strong></ins>
+<ins><strong>Ans.:</strong></ins> We know, accuracy tells us the proportion of **all predictions that were correct**.
+
+$$
+Accuracy=\frac{TP+TN}{TP+TN+FP+FN}
+$$
+
+$$
+Accuracy=\frac{220+210}{500}
+$$
+
+$$
+=\frac{430}{500}
+$$
+
+$$
+=\boxed{0.86}
+$$
+
+Then Precision:
+
+$$
+Precision=\frac{TP}{TP+FP}
+$$
+
+$$
+Precision=\frac{220}{220+40}
+$$
+
+$$
+=\frac{220}{260}
+$$
+
+$$
+=\boxed{0.8462}
+$$
+
+Recall:
+
+$$
+Recall=\frac{TP}{TP+FN}
+$$
+
+$$
+Recall=\frac{220}{220+30}
+$$
+
+$$
+=\frac{220}{250}
+$$
+
+$$
+=\boxed{0.88}
+$$
+
+Now, F1-score is the harmonic mean of **Precision** and **Recall**.
+
+$$
+F1=2\times\frac{Precision\times Recall}{Precision+Recall}
+$$
+
+Using:
+
+$$
+Precision=0.8462,\qquad Recall=0.88
+$$
+
+We get,
+
+$$
+F1=2\times\frac{0.8462\times0.88}{0.8462+0.88}
+$$
+
+$$
+\approx\boxed{0.8627}
+$$
+
+| Metric        |     Answer |
+| ------------- | ---------: |
+| **Accuracy**  |    **86%** |
+| **Precision** | **84.62%** |
+| **Recall**    |    **88%** |
+| **F1-score**  | **86.27%** |
+
+Formulas:
 
 $$
 \boxed{Accuracy=\frac{TP+TN}{Total}}
@@ -159,8 +280,12 @@ $$
 $$
 
 $$
-\boxed{F1=2\frac{Precision\times Recall}{Precision+Recall}}
+\boxed{F1=2\times\frac{Precision\times Recall}{Precision+Recall}}
 $$
+
+### <ins>Ans to the Ques no. 3</ins>
+
+<ins><strong>Ans.:</strong></ins>
 
 ---
 
