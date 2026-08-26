@@ -48,6 +48,8 @@ Course offered by,
     - [**01: PEAS, Goal-based Agents, Branches of AI**](https://shadowshahriar.github.io/cse322/notes/practice-01.pdf)
     - [**02: Bayesian Network, Naive Bayes Classification**](https://shadowshahriar.github.io/cse322/notes/practice-02.pdf)
     - [**03: Mini-max Algorithm, Alpha-Beta Pruning, Bayesian Network**](https://shadowshahriar.github.io/cse322/notes/practice-03.pdf)
+    - [**04: Naive Bayes Classification**](https://shadowshahriar.github.io/cse322/notes/practice-04.pdf)
+    - [**05: Bayesian Network**](https://shadowshahriar.github.io/cse322/notes/practice-05.pdf)
 
 ## Final Project
 
