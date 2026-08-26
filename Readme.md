@@ -39,15 +39,15 @@ Course offered by,
 
 - [**Final Term Examination**](https://shadowshahriar.github.io/cse322/theory/final/#final-term-examination)
     - [Topic List](https://shadowshahriar.github.io/cse322/theory/final/#topic-list)
-      <!-- - [Full Forms](https://shadowshahriar.github.io/cse322/theory/final/#full-forms) -->
     - [Definitions](https://shadowshahriar.github.io/cse322/theory/final/#definitions)
     - [Theoretical Questions](https://shadowshahriar.github.io/cse322/theory/final/#theoretical-questions)
-      <!-- - [CT Questions](https://shadowshahriar.github.io/cse322/theory/final/#ct-questions) -->
 
 ## Practice Problems
 
 - **CT Examination**
     - [**01: PEAS, Goal-based Agents, Branches of AI**](https://shadowshahriar.github.io/cse322/notes/practice-01.pdf)
+    - [**02: Bayesian Network, Naive Bayes Classification**](https://shadowshahriar.github.io/cse322/notes/practice-02.pdf)
+    - [**03: Mini-max Algorithm, Alpha-Beta Pruning, Bayesian Network**](https://shadowshahriar.github.io/cse322/notes/practice-03.pdf)
 
 ## Final Project
 
